@@ -1,28 +1,53 @@
-project:
-  type: website
+# project:
+#   type: website
 
-website:
-  title: "Arun Vignesh Malarkkan"
-  navbar:
-    left:
-      - href: index.md
-        text: Home
-      - publications.md
-      - projects.md
-      - photgraphy.md
-  favicon: "images/favicon-32x32.png"
-  page-footer:
-    left: "I created this site with [Jekyll](https://jekyllrb.com/), an open source scientific publishing system. To see the code that generates this site, [visit the repo here]()."
+# website:
+#   title: "Arun Vignesh Malarkkan"
+#   navbar:
+#     left:
+#       - href: index.md
+#         text: Home
+#       - publications.md
+#       - projects.md
+#       - photgraphy.md
+#   favicon: "images/favicon-32x32.png"
+#   page-footer:
+#     left: "I created this site with [Jekyll](https://jekyllrb.com/), an open source scientific publishing system. To see the code that generates this site, [visit the repo here]()."
     
 
-format:
-  html:
-    theme: minimal
-    css: styles.css
-    toc: true
+# format:
+#   html:
+#     theme: minimal
+#     css: styles.css
+#     toc: true
 
-editor: visual
+# editor: visual
 
-execute:
-  freeze: auto
+# execute:
+#   freeze: auto
 
+theme: minimal
+title: "Arun Vignesh Malarkkan"
+description: "Personal Website"
+
+---
+layout: page
+title: Homepage
+permalink: /homepage
+---
+
+---
+layout: page
+title: Projects
+permalink: /projects
+---
+---
+layout: page
+title: Publications
+permalink: /publications
+---
+---
+layout: page
+title: Photography
+permalink: /photography
+---
