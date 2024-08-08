@@ -16,8 +16,6 @@ about:
 comments: false
 ---
 
-::: {.column-page}
-
 ## Bio
 I am currently a second year Computer Science Ph.D. student in Arizona State University, USA. I am working in Knowledge Discovery and Data Mining (KDD) lab under the supervision of [Dr. Yanjie Fu](https://yanjiefu.com), specializing in Causal AI and Explainable AI.
 
