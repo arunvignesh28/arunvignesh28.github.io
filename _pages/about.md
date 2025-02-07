@@ -28,8 +28,8 @@ Interests: Causal Inference and Discovery Models, Multimodal Knowledge Graph Rep
 
 # 🔥 News
 - *February 2025*: &nbsp; My work "Continual Causal Learning for Online Cyberattack Detection in Public Infrastructures" is under review in KDD-2025
-- *January 2025*: &nbsp; My work "Position: Causal Learning is the Next Frontier in Multivariate Time Series Anomaly Detection" is under review in ICML-2025
-- *December 2025*: &nbsp; My work "Causal Graphs as Cyberattack Descriptors for Anomaly Detection in Critical Public Infrastructures" is under review in the journal ACM - Transactions on Intelligent Systems and Technology.
+- *January 2025*: &nbsp;  My work "Position: Causal Learning is the Next Frontier in Multivariate Time Series Anomaly Detection" is under review in ICML-2025
+- *December 2025*:  My work "Causal Graphs as Cyberattack Descriptors for Anomaly Detection in Critical Public Infrastructures" is under review in the journal ACM - Transactions on Intelligent Systems and Technology.
 - *July 2024*: &nbsp;🎉🎉 My work "Multi-view Causal Graph Fusion Based Anomaly Detection in
 Cyber-Physical Infrastructures" was accepted at CIKM-2024.
 
@@ -64,7 +64,7 @@ Cyber-Physical Infrastructures" was accepted at CIKM-2024.
 # 💬 Invited Talks
 - *July 2024*: Research Talk and Workshop on Graph Neural Networks, Pondicherry University, Puducherry, India.
 - *June 2018*: Workshop on "Introduction to Machine Learning", Pondicherry University, Pudicherry, India.
-- 
+  
 # 🧑🏻‍💻 Industry Experience
 - *May 2020 - May 2021*: Software Developer/Data Scientist in ASU Decision Center for Educational Excellence.
 - *June 2021 - January 2023*: Software Development Engineer in Amazon Alexa.
