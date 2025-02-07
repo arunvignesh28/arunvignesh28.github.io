@@ -73,4 +73,4 @@ Cyber-Physical Infrastructures" was accepted at CIKM-2024.
 # 🖥️ Teaching Experience
 - *August 2023 - May 2024*: Lab Instructor for the course CSE 205 - Object Oriented Programming in Java.
 - *August 2024 - December 2024*: Teaching Assistant/Grader for the course CSE 572 - Data Mining.
-- *January 2025 - *: Lab Instructor for the courses CSE 110 - Introduction to Programming in Java and CSE 205 - Object Oriented Programming in Java.
+- *January 2025 - May 2025*: Lab Instructor for the courses CSE 110 - Introduction to Programming in Java and CSE 205 - Object Oriented Programming in Java.
