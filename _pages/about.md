@@ -19,7 +19,7 @@ redirect_from:
 
 I am currently a second year Computer Science Ph.D. student in Arizona State University, USA. I am working in the Knowledge Discovery and Data Mining (KDD) lab under the supervision of [Dr. Yanjie Fu](https://www.yanjiefu.com), specializing in Causal AI, Multimodal Knowledge Representation, Multivariate Time Series Anomaly Detection, and Reasoning strategies in LLMs.
 
-Before starting my Ph.D. program, I was working as a Software Development Engineer for 3 years in Alexa AI at Amazon and in Financial Projections at Fidelity Investments which laid a solid industrial exposure for my research interests.
+Before starting my Ph.D. program, I worked as a Software Development Engineer for 3 years in Alexa AI at Amazon and Financial Projections at Fidelity Investments, which provided solid industrial exposure for my research interests.
 
 I am also an avid photographer and a passionate programming teacher training young people who are excited about creative problem-solving.
 
@@ -27,6 +27,7 @@ Interests: Causal Inference and Discovery Models, Multimodal Knowledge Graph Rep
 
 
 # 🔥 News
+- *March 2025*: &nbsp; My work "Survey: Data-Centric AI: Tabular Learning from Reinforcement Learning and Generative AI Perspective" is under review in IJCAI-2025
 - *February 2025*: &nbsp; My work "Continual Causal Learning for Online Cyberattack Detection in Public Infrastructures" is under review in KDD-2025
 - *January 2025*: &nbsp;  My work "Position: Causal Learning is the Next Frontier in Multivariate Time Series Anomaly Detection" is under review in ICML-2025
 - *December 2025*:  My work "Causal Graphs as Cyberattack Descriptors for Anomaly Detection in Critical Public Infrastructures" is under review in the journal ACM - Transactions on Intelligent Systems and Technology.
@@ -54,7 +55,8 @@ Cyber-Physical Infrastructures" was accepted at CIKM-2024.
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- *March 2018*: Best Undergraduate Researcher 2017-2018, SSN College of Engineering, Anna University, India. 
+- *March 2018*: Best Undergraduate Researcher 2017-2018, SSN College of Engineering, Anna University, India.
+- *December 2018*: Academic Scholarship, Arizona State University, USA. 
 
 # 📖 Education
 - *August 2023 - Present*: Ph.D. in Computer Science, Arizona State University, Tempe, USA. 
