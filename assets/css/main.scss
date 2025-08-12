@@ -1,3 +1,34 @@
+// Photography Gallery Styles
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.photo-gallery a.gallery-item {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.photo-gallery a.gallery-item:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.16);
+}
+.photo-gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    background: #f8f8f8;
+}
+.gallery-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #444;
+    font-size: 1.1rem;
+}
 ---
 ---
 
