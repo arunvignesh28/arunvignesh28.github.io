@@ -39,9 +39,9 @@ photography:
   - title: "Collections"
     children:
       - title: "All Photos"
-        - title: "Gallery"
-          url: "/photography/gallery/"
         url: "/photography/"
+      - title: "Gallery"
+        url: "/photography/gallery/"
       - title: "Nature"
         url: "/photography/?filter=nature"
       - title: "Urban"
@@ -49,4 +49,4 @@ photography:
       - title: "Tech"
         url: "/photography/?filter=tech"
       - title: "Travel"
-        url: "/photography/?filter=travel"
+        url: "/photography/?filter=
