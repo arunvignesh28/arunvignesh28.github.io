@@ -1,52 +1,25 @@
+# main links links
 main:
-  - title: "Home"
-    url: "/"
+  - title: "About Me"
+    url: "/#about-me"
 
-  - title: "Research"
-    url: "/#research-highlights"
+  - title: "News"
+    url: "/#-news"
 
   - title: "Publications"
-    url: "/publications/"
+    url: "/#-publications"
 
-  - title: "Projects"
-    url: "/projects/"
+  - title: "Honors and Awards"
+    url: "/#-honors-and-awards"
 
-  - title: "Photography"
-    url: "/photography/"
+  - title: "Education"
+    url: "/#-education"
 
-  - title: "Blog"
-    url: "/blog/"
+  - title: "Invited Talks"
+    url: "/#-invited-talks"
 
-  - title: "CV"
-    url: "/cv/"
+  - title: "Industry Experience"
+    url: "/#-industry-experience"
 
-  - title: "Contact"
-    url: "/contact/"
-
-portfolio:
-  - title: "Research Projects"
-    children:
-      - title: "Causal AI"
-        url: "/projects/#causal-ai"
-      - title: "Knowledge Graphs"
-        url: "/projects/#knowledge-graphs"
-      - title: "Explainable AI"
-        url: "/projects/#explainable-ai"
-      - title: "Industry Projects"
-        url: "/projects/#industry"
-
-photography:
-  - title: "Collections"
-    children:
-      - title: "All Photos"
-        - title: "Gallery"
-          url: "/photography/gallery/"
-        url: "/photography/"
-      - title: "Nature"
-        url: "/photography/?filter=nature"
-      - title: "Urban"
-        url: "/photography/?filter=urban"
-      - title: "Tech"
-        url: "/photography/?filter=tech"
-      - title: "Travel"
-        url: "/photography/?filter=travel"
+  - title: "Teaching Experience"
+    url: "/#-teaching-experience"
