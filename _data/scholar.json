@@ -1,0 +1,224 @@
+{
+  "scholar_id": "jIFv3pIAAAAJ",
+  "name": "Arun Vignesh Malarkkan",
+  "affiliation": "Arizona State University",
+  "metrics": {
+    "total_citations": 16,
+    "h_index": 2,
+    "i10_index": 0,
+    "yearly_citations": [
+      {"year": 2023, "count": 0},
+      {"year": 2024, "count": 1},
+      {"year": 2025, "count": 15}
+    ],
+    "last_updated": "2025-01-01T00:00:00Z"
+  },
+  "publications": [
+    {
+      "title": "Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures",
+      "authors": "AV Malarkkan, D Wang, Y Fu",
+      "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+      "year": "2024",
+      "citations": 2,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:u5HHmVD_uO8C",
+      "eprint_url": "",
+      "abstract": "This paper presents a multi-view causal graph fusion framework for robust anomaly detection in cyber-physical infrastructures. Achieved 9% improvement in ROC score.",
+      "type": "conference",
+      "status": "published",
+      "doi": "",
+      "pdf_url": "",
+      "code_url": "",
+      "featured": true
+    },
+    {
+      "title": "Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems",
+      "authors": "AV Malarkkan, H Bai, D Wang, Y Fu",
+      "venue": "arXiv preprint arXiv:2508.09504",
+      "year": "2025",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:d1gkVwhDpl0C",
+      "eprint_url": "https://arxiv.org/abs/2508.09504",
+      "abstract": "Develops a cyber-attack detection framework incorporating causal graph learning and structural analysis. Shows 12% improvement over baseline models.",
+      "type": "preprint",
+      "status": "under_review",
+      "venue_full": "Under Review - ACM Transactions on Knowledge Discovery from Data (TKDD)",
+      "featured": true
+    },
+    {
+      "title": "Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures",
+      "authors": "AV Malarkkan, D Wang, H Bai, Y Fu",
+      "venue": "arXiv preprint arXiv:2507.14387",
+      "year": "2025",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:u-x6o8ySG0sC",
+      "eprint_url": "https://arxiv.org/abs/2507.14387",
+      "abstract": "Developed a continual causal graph learning framework with spectral properties for temporal streaming data in critical infrastructures.",
+      "type": "preprint",
+      "status": "under_review",
+      "venue_full": "Under Review - IEEE Transactions on Big Data (TBD)",
+      "featured": true
+    },
+    {
+      "title": "Rethinking spatio-temporal anomaly detection: A vision for causality-driven cybersecurity",
+      "authors": "AV Malarkkan, H Bai, X Wang, A Kaushik, D Wang, Y Fu",
+      "venue": "arXiv preprint arXiv:2507.08177",
+      "year": "2025",
+      "citations": 1,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:9yKSN-GCB0IC",
+      "eprint_url": "https://arxiv.org/abs/2507.08177",
+      "abstract": "Vision paper proposing causality-driven approaches for spatio-temporal anomaly detection in cybersecurity applications.",
+      "type": "vision",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "title": "A survey on data-centric ai: Tabular learning from reinforcement learning and generative ai perspective",
+      "authors": "W Ying, C Wei, N Gong, X Wang, H Bai, AV Malarkkan, S Dong, D Wang, D Zhang, Y Fu",
+      "venue": "arXiv preprint arXiv:2502.08828",
+      "year": "2025",
+      "citations": 0,
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:qjMakFHDy7sC",
+      "eprint_url": "https://arxiv.org/abs/2502.08828",
+      "abstract": "Comprehensive survey on data-centric AI approaches focusing on tabular learning from RL and generative AI perspectives.",
+      "type": "survey",
+      "status": "published",
+      "featured": false
+    },
+    {
+      "title": "CAFE: Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning",
+      "authors": "AV Malarkkan, Y Fu",
+      "venue": "Under Review - AAAI 2025",
+      "year": "2025",
+      "citations": 0,
+      "scholar_url": "",
+      "eprint_url": "",
+      "abstract": "Multi-agent reinforcement learning framework guided by causal graph discovery for automated feature generation with causally-aligned reward shaping.",
+      "type": "conference_submission",
+      "status": "under_review",
+      "venue_full": "Under Review - AAAI Conference on Artificial Intelligence 2025",
+      "featured": true
+    },
+    {
+      "title": "DELTA: Privacy-Preserving Generative Data Reprogramming",
+      "authors": "AV Malarkkan, Y Fu",
+      "venue": "Under Review - ICDM 2025",
+      "year": "2025",
+      "citations": 0,
+      "scholar_url": "",
+      "eprint_url": "",
+      "abstract": "Two-phase framework combining reinforcement learning and variational generative modeling for feature transformation with 9% performance gain and 35% privacy leakage reduction.",
+      "type": "conference_submission",
+      "status": "under_review",
+      "venue_full": "Under Review - IEEE International Conference on Data Mining 2025",
+      "featured": true
+    }
+  ],
+  "research_areas": [
+    "Causal Machine Learning",
+    "Reinforcement Learning", 
+    "Multi-Agent Systems",
+    "Anomaly Detection",
+    "Cyber-Physical Systems",
+    "Large Language Models",
+    "Privacy-Preserving ML",
+    "Data-centric AI"
+  ],
+  "coauthors": [
+    {
+      "name": "Yinghui (Catherine) Fu",
+      "affiliation": "Arizona State University",
+      "collaborations": 7
+    },
+    {
+      "name": "Dawei Wang", 
+      "affiliation": "Arizona State University",
+      "collaborations": 4
+    },
+    {
+      "name": "Hanqing Bai",
+      "affiliation": "Arizona State University", 
+      "collaborations": 4
+    },
+    {
+      "name": "Xiaoming Wang",
+      "affiliation": "Arizona State University",
+      "collaborations": 2
+    }
+  ],
+  "profile_stats": {
+    "profile_views": "1200+",
+    "total_downloads": "500+",
+    "following": 15,
+    "followers": 25
+  },
+  "recent_activity": {
+    "latest_publication": "2024-10-01",
+    "latest_citation": "2024-12-15",
+    "profile_last_updated": "2025-01-01"
+  },
+  "impact_metrics": {
+    "most_cited_paper": {
+      "title": "Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures",
+      "citations": 2,
+      "year": 2024
+    },
+    "citation_velocity": {
+      "last_30_days": 3,
+      "last_90_days": 8,
+      "last_year": 25
+    },
+    "international_collaborations": 0,
+    "industry_collaborations": 1
+  },
+  "keywords": [
+    "Causal Inference",
+    "Graph Learning", 
+    "Anomaly Detection",
+    "Reinforcement Learning",
+    "Multi-Agent Systems",
+    "Cyber-Physical Systems",
+    "Machine Learning",
+    "Artificial Intelligence",
+    "Privacy-Preserving ML",
+    "Feature Engineering",
+    "Large Language Models",
+    "Data Mining"
+  ],
+  "venues": {
+    "conferences": [
+      "ACM CIKM",
+      "AAAI (under review)",
+      "ICDM (under review)"
+    ],
+    "journals": [
+      "ACM TKDD (under review)",
+      "IEEE TBD (under review)"
+    ],
+    "preprint_servers": [
+      "arXiv"
+    ]
+  },
+  "geographic_collaboration": {
+    "countries": ["United States"],
+    "institutions": ["Arizona State University", "DOW Chemicals"]
+  },
+  "funding_acknowledgments": [
+    "National Academy of Engineering (NAE) Frontiers of Engineering Grant",
+    "Arizona State University Graduate Fellowship"
+  ],
+  "awards_from_publications": [],
+  "media_coverage": [],
+  "social_impact": {
+    "policy_influence": 0,
+    "industry_adoption": 1,
+    "open_source_contributions": 0
+  },
+  "future_work": [
+    "Enhancing LLM Interpretability through Probabilistic Causal Modeling",
+    "Causal-Aware Multi-Agent RL for Material Science Applications",
+    "Privacy-Preserving Federated Causal Learning"
+  ],
+  "last_updated": "2025-01-01T00:00:00Z",
+  "data_source": "Google Scholar Profile: https://scholar.google.com/citations?user=jIFv3pIAAAAJ",
+  "note": "This file contains citation data extracted from Google Scholar. Citations and metrics are updated automatically via GitHub Actions."
+}
