@@ -45,7 +45,7 @@ Edit these sections in `index.html`:
 
 **About Section:**
 - Write your biography
-- Update statistics (publications, citations, years)
+- Update statistics (publications, citations)
 - Add your research interests
 
 **Research Areas:**
