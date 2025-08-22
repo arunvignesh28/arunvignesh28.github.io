@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Vignesh Malarkkan - Ph.D. Student</title>
+    <meta name="description" content="Ph.D. Student in Computer Science specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI">
+    <meta name="keywords" content="PhD, Computer Science, Causal Machine Learning, Reinforcement Learning, LLM, AI, Arizona State University, Arun Vignesh">
+    <meta name="author" content="Arun Vignesh Malarkkan">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Arun Vignesh Malarkkan - Ph.D. Student">
+    <meta property="og:description" content="Ph.D. Student in Computer Science specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arunvignesh28.github.io">
+    <meta property="og:image" content="https://arunvignesh28.github.io/images/profile.jpg">
+    
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arun Vignesh Malarkkan - Ph.D. Student">
+    <meta name="twitter:description" content="Specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI">
+    <meta name="twitter:image" content="https://arunvignesh28.github.io/images/profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="apple-touch-icon" href="./images/profile.jpg">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Arun Vignesh Malarkkan",
+      "jobTitle": "Ph.D. Candidate in Computer Science",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Arizona State University"
+      },
+      "email": "malarkkanarunvignesh@gmail.com",
+      "telephone": "+1-480-255-2954",
+      "url": "https://arunvignesh28.github.io",
+      "sameAs": [
+        "https://github.com/arunvignesh28",
+        "https://linkedin.com/in/arunvignesh28"
+      ],
+      "knowsAbout": [
+        "Causal Machine Learning",
+        "Reinforcement Learning",
+        "Large Language Models",
+        "Data-centric AI"
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --gradient-start: #667eea;
+            --gradient-end: #764ba2;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --gray-100: #f1f3f4;
+            --gray-600: #666;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="200" cy="300" r="2" fill="white" opacity="0.3"/><circle cx="800" cy="200" r="1" fill="white" opacity="0.4"/><circle cx="600" cy="800" r="1.5" fill="white" opacity="0.2"/></svg>');
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(-1000px) rotate(360deg); }
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 300px 1fr;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+            line-height: 1.8;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--gradient-start);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--gray-100);
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--gradient-start);
+        }
+
+        /* Status Badge */
+        .status-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--success-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--light-bg);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--gray-600);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Research Section */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .research-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .research-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .research-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .research-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .research-card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .research-card p {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: var(--light-bg);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience-card .company {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-card .role {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-card .duration {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+        }
+
+        /* Publications Section */
+        .publications {
+            background: white;
+        }
+
+        .publication-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .publication-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .pub-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .pub-authors {
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .pub-venue {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .pub-status {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background: var(--warning-color);
+            color: white;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .pub-status.published {
+            background: var(--success-color);
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-link {
+            padding: 0.5rem 1rem;
+            background: var(--gray-100);
+            color: #555;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pub-link:hover {
+            background: #e1e8ed;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light-bg);
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .contact-icon i {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-item h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        .contact-item p {
+            color: var(--gray-600);
+        }
+
+        .contact-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #34495e;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .research-grid,
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Arun Vignesh Malarkkan</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="status-badge">
+                        <i class="fas fa-circle" style="color: #27ae60; font-size: 0.7rem;"></i>
+                        Open to Opportunities
+                    </div>
+                    <h1>Arun Vignesh Malarkkan</h1>
+                    <div class="subtitle">Ph.D. Candidate in Computer Science</div>
+                    <div class="description">
+                        Specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI. 
+                        Developing interpretable, robust AI solutions and advancing LLM reasoning capabilities.
+                        Actively seeking Applied Scientist/ML Research Internship opportunities.
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#research" class="btn btn-primary">
+                            <i class="fas fa-microscope"></i>
+                            View Research
+                        </a>
+                        <a href="./files/cv.pdf" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <img src="./images/profile.jpg" alt="Arun Vignesh Malarkkan" class="profile-image">
+                <div></div> <!-- Empty div for grid spacing -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">
+                    Ph.D. Candidate passionate about advancing AI through causal understanding and robust learning
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Ph.D. Candidate in Computer Science at Arizona State University, specializing in 
+                        Causal Machine Learning, Reinforcement Learning, and Data-centric AI. My research focuses 
+                        on developing interpretable and robust AI solutions that advance LLM reasoning capabilities 
+                        and tackle real-world challenges in cyber-physical systems.
+                    </p>
+                    <p>
+                        Prior to my PhD, I completed my Master's in Computer Science from Arizona State University 
+                        with a 3.8/4.0 CGPA. I have extensive industry experience as a Senior Software Engineer at 
+                        Fidelity Investments and Software Development Engineer at Amazon Alexa AI, where I led 
+                        end-to-end ML solutions and voice-enabled purchase systems.
+                    </p>
+                    <p>
+                        Currently, I'm a Doctoral Researcher at DOW Chemicals under the National Academy of 
+                        Engineering (NAE) Frontiers of Engineering grant, developing causal-aware multi-agent 
+                        reinforcement learning frameworks for AI-driven material science simulations. I am 
+                        actively seeking Applied Scientist/Machine Learning Research Internship opportunities.
+                    </p>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="publicationsCount">7</span>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="citationsCount">50</span>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <div class="stat-label">Years PhD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Research Areas</h2>
+                <p class="section-subtitle">
+                    Advancing AI through causal understanding, robust learning, and interpretable solutions
+                </p>
+            </div>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Causal Machine Learning</h3>
+                    <p>
+                        Developing causal graph learning frameworks for robust anomaly detection in 
+                        cyber-physical systems. Focus on causal inference, structural divergence analysis, 
+                        and multi-view causal graph fusion for interpretable AI solutions that understand 
+                        cause-and-effect relationships in complex systems.
+                    </p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Multi-Agent Reinforcement Learning</h3>
+                    <p>
+                        Creating causally-guided automated feature engineering frameworks using multi-agent 
+                        RL. Developing reward shaping strategies and causal-aware agents for improved 
+                        interpretability and efficiency in material science simulations and complex decision-making tasks.
+                    </p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>LLM Reasoning & Data-centric AI</h3>
+                    <p>
+                        Enhancing Large Language Model interpretability through probabilistic causal modeling 
+                        on knowledge graphs. Advancing LLM reasoning capabilities and developing privacy-preserving 
+                        generative data reprogramming techniques for robust and trustworthy AI systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">
+                    Industry and research experience in AI/ML, software development, and advanced research
+                </p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="company">DOW Chemicals</div>
+                    <div class="role">Doctoral Researcher</div>
+                    <div class="duration">June 2025 – Present</div>
+                    <p>
+                        Research collaboration under National Academy of Engineering (NAE) Frontiers of Engineering grant. 
+                        Developing causal-aware multi-agent reinforcement learning frameworks for AI-driven material science 
+                        simulations and advancing computational models for materials discovery and optimization.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="company">Fidelity Investments</div>
+                    <div class="role">Senior Software Engineer</div>
+                    <div class="duration">January 2023 – June 2023</div>
+                    <p>
+                        Tech-lead for developing end-to-end retirement goal financial projections. Orchestrated project 
+                        retirement goal savings framework based on Monte Carlo simulations. Developed ensemble outlier 
+                        detection tools to determine factors impacting projected savings goals.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="company">Amazon Alexa AI</div>
+                    <div class="role">Software Development Engineer</div>
+                    <div class="duration">June 2021 – January 2023</div>
+                    <p>
+                        Implemented end-to-end voice (VUI) purchase flow for Skills requiring Parental Consents, enabling 
+                        HIPAA compliance. Developed Purchase Likelihood Score model that drove the Alexa Purchase Recommender 
+                        system, improving performance by 8% increase in Voice Skill purchases. Integrated localization module 
+                        and designed voice-enabled promotional discounts for Alexa Skills.
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <div class="company">ASU Decision Center</div>
+                    <div class="role">Data Scientist / Software Developer</div>
+                    <div class="duration">June 2020 – May 2021</div>
+                    <p>
+                        Developed outlier prediction models for financial plans, school populations, and infrastructure. 
+                        Designed end-to-end ETL pipelines and AWS Lambdas for data ingestion and analysis. Implemented 
+                        prediction models to optimize school resources and analyze graduation rate factors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">
+                    Recent work and contributions to causal ML, reinforcement learning, and AI research
+                </p>
+            </div>
+            <div id="publicationsList">
+                <div class="publication-item">
+                    <div class="pub-status published">Published</div>
+                    <div class="pub-title">
+                        Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, D. Wang, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        Proceedings of the 33rd ACM CIKM, pp. 4760-4767, 2024
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://dl.acm.org/doi/10.1145/3627673.3680096" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-external-link-alt"></i> ACM DL
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-status">Under Review - ACM TKDD</div>
+                    <div class="pub-title">
+                        Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, H. Bai, D. Wang, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        arXiv preprint arXiv:2508.09504 (Under Review – ACM TKDD), 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2508.09504" class="pub-link">
+                            <i class="fas fa-external-link-alt"></i> arXiv
+                        </a>
+                        <a href="files/papers/causal_graph_profiling.pdf" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-status">Under Review - IEEE TBD</div>
+                    <div class="pub-title">
+                        Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, D. Wang, H. Bai, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        arXiv preprint arXiv:2507.14387 (Under Review – IEEE TBD), 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2507.14387" class="pub-link">
+                            <i class="fas fa-external-link-alt"></i> arXiv
+                        </a>
+                        <a href="files/papers/incremental_causal_learning.pdf" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-status">Under Review - AAAI 2025</div>
+                    <div class="pub-title">
+                        CAFE: Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        Under Review – AAAI 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="files/papers/cafe_aaai2025.pdf" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-status">Under Review - ICDM 2025</div>
+                    <div class="pub-title">
+                        DELTA: Privacy-Preserving Generative Data Reprogramming
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        Under Review – ICDM 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="files/papers/delta_icdm2025.pdf" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-code"></i> Code
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-title">
+                        A Survey on Data-centric AI: Tabular Learning from Reinforcement Learning and Generative AI Perspective
+                    </div>
+                    <div class="pub-authors">
+                        W. Ying, C. Wei, N. Gong, X. Wang, H. Bai, <strong>Arun Vignesh Malarkkan</strong>, S. Dong, D. Wang, D. Zhang, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        arXiv preprint arXiv:2502.08828, 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2502.08828" class="pub-link">
+                            <i class="fas fa-external-link-alt"></i> arXiv
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+
+                <div class="publication-item">
+                    <div class="pub-title">
+                        Rethinking Spatio-temporal Anomaly Detection: A Vision for Causality-driven Cybersecurity
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, H. Bai, X. Wang, A. Kaushik, D. Wang, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        arXiv preprint arXiv:2507.08177, 2025
+                    </div>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/pdf/2507.08177" class="pub-link">
+                            <i class="fas fa-external-link-alt"></i> arXiv
+                        </a>
+                        <a href="files/papers/spatiotemporal_anomaly_vision.pdf" class="pub-link">
+                            <i class="fas fa-file-pdf"></i> PDF
+                        </a>
+                        <a href="#" class="pub-link">
+                            <i class="fas fa-quote-left"></i> Cite
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://scholar.google.com/citations?user=jIFv3pIAAAAJ" class="btn btn-primary" target="_blank">
+                    <i class="fab fa-google"></i>
+                    View on Google Scholar
+                </a>
+                <a href="files/papers/" class="btn btn-secondary" style="margin-left: 1rem;">
+                    <i class="fas fa-folder"></i>
+                    All Papers
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">
+                    Open to research collaborations, internship opportunities, and academic discussions
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:malarkkanarunvignesh@gmail.com">malarkkanarunvignesh@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <p><a href="tel:+14802552954">(+1) 480-255-2954</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Arizona State University<br>School of Computing and Augmented Intelligence<br>Tempe, Arizona, USA</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://linkedin.com/in/arunvignesh28" target="_blank">linkedin.com/in/arunvignesh28</a></p>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                    <h4 style="color: var(--secondary-color); margin-bottom: 1rem;">
+                        <i class="fas fa-briefcase" style="margin-right: 0.5rem;"></i>
+                        Seeking Opportunities
+                    </h4>
+                    <p style="color: var(--gray-600);">
+                        I am actively seeking <strong>Applied Scientist</strong> and <strong>Machine Learning Research Internship</strong> 
+                        opportunities where I can apply my expertise in causal ML, reinforcement learning, and LLM reasoning to 
+                        solve real-world challenges. Open to both industry and research lab positions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/arunvignesh28" class="social-link" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=jIFv3pIAAAAJ" class="social-link" target="_blank" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://linkedin.com/in/arunvignesh28" class="social-link" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:malarkkanarunvignesh@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="files/cv.pdf" class="social-link" target="_blank" title="CV">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Arun Vignesh Malarkkan. All rights reserved.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
+                Ph.D. Student in School of Computing and Augmented Intelligence | Arizona State University
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Animate numbers in stats
+        function animateNumber(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateNumber() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            updateNumber();
+        }
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                    
+                    // Animate stats numbers when they come into view
+                    if (entry.target.querySelector('#publicationsCount')) {
+                        animateNumber(document.getElementById('publicationsCount'), 7);
+                        animateNumber(document.getElementById('citationsCount'), 50);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const elementsToAnimate = document.querySelectorAll('.section, .research-card, .publication-item, .experience-card');
+            elementsToAnimate.forEach(el => observer.observe(el));
+        });
+
+        // Google Scholar integration
+        async function loadGoogleScholarData() {
+            try {
+                // This would connect to your Google Scholar automation
+                console.log('Google Scholar data integration ready');
+            } catch (error) {
+                console.error('Error loading Google Scholar data:', error);
+            }
+        }
+
+        // Load Google Scholar data on page load
+        loadGoogleScholarData();
+
+        // Add loading state for external links
+        document.querySelectorAll('a[target="_blank"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const icon = this.querySelector('i');
+                if (icon && !icon.classList.contains('fa-external-link-alt')) {
+                    const originalClass = icon.className;
+                    icon.className = 'fas fa-spinner fa-spin';
+                    setTimeout(() => {
+                        icon.className = originalClass;
+                    }, 1000);
+                }
+            });
+        });
+
+        // Keyboard navigation support
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('navLinks').classList.remove('active');
+            }
+        });
+
+        // Publication search functionality
+        function searchPublications(query) {
+            const publications = document.querySelectorAll('.publication-item');
+            const searchTerm = query.toLowerCase();
+            
+            publications.forEach(pub => {
+                const title = pub.querySelector('.pub-title').textContent.toLowerCase();
+                const authors = pub.querySelector('.pub-authors').textContent.toLowerCase();
+                const venue = pub.querySelector('.pub-venue').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || authors.includes(searchTerm) || venue.includes(searchTerm)) {
+                    pub.style.display = 'block';
+                } else {
+                    pub.style.display = 'none';
+                }
+            });
+        }
+
+        // Copy citation functionality
+        function copyCitation(citationText) {
+            navigator.clipboard.writeText(citationText).then(function() {
+                const toast = document.createElement('div');
+                toast.textContent = 'Citation copied to clipboard!';
+                toast.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: #27ae60;
+                    color: white;
+                    padding: 1rem;
+                    border-radius: 5px;
+                    z-index: 9999;
+                `;
+                document.body.appendChild(toast);
+                setTimeout(() => {
+                    document.body.removeChild(toast);
+                }, 3000);
+            });
+        }
+
+        // Scroll progress indicator
+        window.addEventListener('scroll', function() {
+            const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            
+            let progressBar = document.getElementById('scroll-progress');
+            if (!progressBar) {
+                progressBar = document.createElement('div');
+                progressBar.id = 'scroll-progress';
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: ${scrollProgress}%;
+                    height: 3px;
+                    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+                    z-index: 9999;
+                    transition: width 0.1s ease;
+                `;
+                document.body.appendChild(progressBar);
+            } else {
+                progressBar.style.width = `${scrollProgress}%`;
+            }
+        });
+
+        // Track interactions for analytics
+        function trackInteraction(action, element) {
+            console.log(`User ${action} on ${element}`);
+            // Add Google Analytics tracking here if needed
+        }
+
+        // Add click tracking to important elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track publication clicks
+            document.querySelectorAll('.pub-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    trackInteraction('click', 'publication_link');
+                });
+            });
+
+            // Track social media clicks
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    trackInteraction('click', 'social_media');
+                });
+            });
+
+            // Track CV download
+            document.querySelectorAll('a[href*="cv.pdf"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    trackInteraction('download', 'cv');
+                });
+            });
+        });
+    </script>
+
+    <!-- Google Analytics (replace with your tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-jIFv3pIAAAAJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-jIFv3pIAAAAJ'); // Replace with your actual tracking ID
+    </script>
+</body>
+</html>

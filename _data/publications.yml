@@ -1,0 +1,85 @@
+# Publications data file
+# Add your publications here following this format
+
+- title: "Title of Your Recent Paper: A Novel Approach to [Research Problem]"
+  authors: "<strong>Arun Vignesh</strong>, Co-Author Name, Senior Author Name"
+  venue: "Proceedings of the International Conference on [Your Field] (CONFERENCE 2024)"
+  year: 2024
+  type: "conference"
+  status: "published"
+  pdf: "files/papers/paper1.pdf"
+  code: "https://github.com/arunvignesh28/project1"
+  arxiv: "https://arxiv.org/abs/2024.xxxxx"
+  slides: "files/slides/conference2024_slides.pdf"
+  abstract: "Brief abstract of your paper describing the main contributions and findings. This should be 2-3 sentences highlighting the key innovation and results."
+  citations: 12
+  featured: true
+
+- title: "Another Research Paper: Investigating [Specific Problem] in [Domain]"
+  authors: "Co-Author Name, <strong>Arun Vignesh</strong>, Another Collaborator"
+  venue: "Journal of [Field Name], Vol. 15, No. 3"
+  year: 2023
+  type: "journal"
+  status: "published"
+  pdf: "files/papers/paper2.pdf"
+  doi: "10.1000/journal.2023.xxxxx"
+  abstract: "This work presents a comprehensive study of [topic]. Our approach demonstrates significant improvements over existing methods."
+  citations: 25
+  featured: true
+
+- title: "Workshop Paper: Early Results on [Research Topic]"
+  authors: "<strong>Arun Vignesh</strong>, Advisor Name"
+  venue: "Workshop on [Topic] at [Major Conference] 2023"
+  year: 2023
+  type: "workshop"
+  status: "published"
+  pdf: "files/papers/workshop2023.pdf"
+  poster: "files/posters/workshop2023_poster.pdf"
+  abstract: "Preliminary results from our ongoing research into [topic]. Shows promising directions for future work."
+  citations: 5
+
+- title: "Preprint: Novel Method for [Problem] Using [Technique]"
+  authors: "<strong>Arun Vignesh</strong>, Research Collaborator, Lab Member"
+  venue: "arXiv preprint"
+  year: 2024
+  type: "preprint"
+  status: "preprint"
+  arxiv: "https://arxiv.org/abs/2024.xxxxx"
+  code: "https://github.com/arunvignesh28/novel-method"
+  abstract: "We propose a novel approach to [problem] that achieves state-of-the-art results. Currently under review."
+  citations: 3
+
+- title: "Thesis Proposal: [Your Thesis Topic]"
+  authors: "<strong>Arun Vignesh</strong>"
+  venue: "PhD Thesis Proposal, [University Name]"
+  year: 2023
+  type: "thesis"
+  status: "proposal"
+  pdf: "files/papers/thesis_proposal.pdf"
+  abstract: "Thesis proposal outlining the research plan for investigating [thesis topic] over the next two years."
+
+# Additional publication categories you might have:
+
+# Patents (if any)
+# - title: "Patent Title"
+#   authors: "Inventor Names"
+#   venue: "Patent Number: US123456789"
+#   year: 2024
+#   type: "patent"
+#   status: "granted"
+
+# Technical Reports
+# - title: "Technical Report Title"
+#   authors: "Report Authors"
+#   venue: "Institution Technical Report TR-2024-01"
+#   year: 2024
+#   type: "techreport"
+#   status: "published"
+
+# Book Chapters
+# - title: "Chapter Title"
+#   authors: "Chapter Authors"
+#   venue: "Book Title, Publisher Name"
+#   year: 2024
+#   type: "chapter"
+#   status: "published"

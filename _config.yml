@@ -1,0 +1,439 @@
+# Site settings
+title: "Arun Vignesh Malarkkan - Ph.D. Candidate in Computer Science"
+description: "Ph.D. Candidate in Computer Science at Arizona State University, specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI. Seeking Applied Scientist/ML Research Internship opportunities."
+url: "https://arunvignesh28.github.io"
+baseurl: ""
+
+# Author information
+author:
+  name: "Arun Vignesh Malarkkan"
+  email: "malarkkanarunvignesh@gmail.com"
+  phone: "+1-480-255-2954"
+  university: "Arizona State University"
+  department: "Computer Science"
+  location: "Tempe, Arizona, USA"
+  status: "Ph.D. Candidate"
+  graduation_year: "Expected 2026"
+  
+# Social media profiles
+social:
+  github: "arunvignesh28"
+  linkedin: "arunvignesh28"
+  google_scholar: "jIFv3pIAAAAJ"  # Replace with your actual Scholar ID
+  orcid: ""  # Add if you have one
+  twitter: ""  # Add if you have one
+  
+# Research information
+research:
+  areas:
+    - "Causal Machine Learning"
+    - "Multi-Agent Reinforcement Learning" 
+    - "LLM Reasoning & Data-centric AI"
+  keywords:
+    - "Causal Inference"
+    - "Causal Graph Learning"
+    - "Reinforcement Learning"
+    - "Large Language Models"
+    - "Anomaly Detection"
+    - "Cyber-Physical Systems"
+    - "Privacy-Preserving ML"
+    - "Automated Feature Engineering"
+    - "Knowledge Graphs"
+    - "Data-centric AI"
+    - "Multi-Agent Systems"
+    - "Structural Divergence"
+    - "Generative Data Reprogramming"
+
+# Current position
+current_position:
+  title: "Doctoral Researcher"
+  organization: "DOW Chemicals"
+  collaboration: "National Academy of Engineering (NAE) Frontiers of Engineering Grant"
+  duration: "June 2025 – Present"
+  description: "Developing causal-aware multi-agent reinforcement learning frameworks for AI-driven material science simulations"
+
+# Education
+education:
+  phd:
+    degree: "Ph.D. in Computer Science"
+    university: "Arizona State University"
+    location: "Tempe, AZ"
+    duration: "August 2023 - Present"
+    status: "In Progress"
+    advisor: "Dr. Yanjie Fu"
+    research_focus: "Causal Machine Learning, Reinforcement Learning, Data-centric AI"
+  masters:
+    degree: "Master of Science in Computer Science"
+    university: "Arizona State University" 
+    location: "Tempe, AZ"
+    duration: "Completed May 2020"
+    gpa: "3.8/4.0"
+
+# Technical skills
+skills:
+  programming:
+    - "Python"
+    - "Java"
+    - "PyTorch"
+    - "TensorFlow"
+    - "Hugging Face Transformers"
+    - "CUDA"
+    - "TypeScript"
+  machine_learning:
+    - "Causal Inference"
+    - "Multi-modal Knowledge Representation"
+    - "LLM Fine-Tuning"
+    - "Transformers"
+    - "RAG (Retrieval-Augmented Generation)"
+    - "Graph Neural Networks"
+    - "Reinforcement Learning"
+    - "Multi-Agent Systems"
+  databases:
+    - "MySQL"
+    - "AWS RDS"
+    - "DynamoDB"
+    - "MongoDB"
+  frameworks:
+    - "Docker"
+    - "Flask"
+    - "LangChain"
+    - "AutoGluon"
+    - "SparkML"
+    - "SageMaker"
+    - "Kubernetes"
+  cloud_platforms:
+    - "Amazon Web Services (AWS)"
+    - "Google Cloud Platform"
+    - "Microsoft Azure"
+
+# Certifications
+certifications:
+  - name: "AWS Certified Developer Associate"
+    issuer: "Amazon Web Services"
+    year: "2023"
+  - name: "Amazon MLU Machine Learning and NLP"
+    issuer: "Amazon"
+    year: "2022"
+
+# Publications statistics
+publication_stats:
+  total_publications: 7
+  published_papers: 1
+  under_review: 4
+  preprints: 2
+  first_author: 5
+  total_citations: 50  # Update with actual count
+  h_index: 3  # Update with actual count
+
+# Notable publications (featured)
+featured_publications:
+  - title: "Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures"
+    venue: "ACM CIKM 2024"
+    status: "published"
+    impact: "9% improvement in ROC score for anomaly detection"
+  - title: "CAFE: Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning"
+    venue: "Under Review - AAAI 2025"
+    status: "under_review"
+  - title: "DELTA: Privacy-Preserving Generative Data Reprogramming"
+    venue: "Under Review - ICDM 2025"
+    status: "under_review"
+    impact: "9% performance gain, 35% reduction in privacy leakage"
+
+# Professional experience
+experience:
+  current:
+    title: "Doctoral Researcher"
+    company: "DOW Chemicals"
+    duration: "June 2025 – Present"
+    type: "Research"
+    location: "Remote/Tempe, AZ"
+  previous:
+    - title: "Senior Software Engineer"
+      company: "Fidelity Investments"
+      duration: "January 2023 – June 2023"
+      type: "Industry"
+      location: "Remote"
+      achievements:
+        - "Tech-lead for end-to-end retirement goal financial projections"
+        - "Developed Monte Carlo simulation frameworks"
+        - "Created ensemble outlier detection tools"
+    - title: "Software Development Engineer"
+      company: "Amazon Alexa AI"
+      duration: "June 2021 – January 2023"
+      type: "Industry"
+      location: "Seattle, WA"
+      achievements:
+        - "Implemented voice purchase flow with HIPAA compliance"
+        - "Developed Purchase Likelihood Score model (8% improvement)"
+        - "Integrated localization module for global markets"
+    - title: "Data Scientist / Software Developer"
+      company: "ASU Decision Center for Educational Excellence"
+      duration: "June 2020 – May 2021"
+      type: "Research/Industry"
+      location: "Tempe, AZ"
+      achievements:
+        - "Developed outlier prediction models for educational systems"
+        - "Designed end-to-end ETL pipelines using AWS"
+        - "Implemented graduation rate prediction models"
+
+# Teaching and mentoring
+teaching:
+  positions:
+    - role: "Senior Teaching Assistant / Lab Instructor"
+      courses: 
+        - "Object Oriented Programming Concepts"
+        - "Data Mining"
+        - "Semantic Web Mining"
+      duration: "August 2023 – Present"
+      university: "Arizona State University"
+  mentoring:
+    - role: "Research Mentor"
+      students:
+        - type: "Undergraduate Honors Thesis"
+          topic: "Data Mining on Temporal Systems"
+          duration: "January 2024 – Present"
+        - type: "Graduate Student"
+          topic: "Optimized Fine-Tuning of LLMs in Reasoning Tasks"
+          duration: "January 2024 – Present"
+
+# Academic service
+academic_service:
+  program_committee:
+    - conference: "AAAI 2026"
+      role: "PC Member"
+    - conference: "IEEE International Conference on System, Computation, Automation and Networking 2024"
+      role: "PC Member"
+    - conference: "IEEE BigData'24 Undergraduate and High School Research Symposium"
+      role: "PC Member"
+  reviewer:
+    conferences:
+      - "KDD (Knowledge Discovery and Data Mining)"
+      - "ICDM (International Conference on Data Mining)"
+      - "Urban AI"
+      - "IEEE BigData"
+      - "ICLR (International Conference on Learning Representations)"
+      - "NeurIPS (Neural Information Processing Systems)"
+    journals:
+      - "ACM Transactions on Knowledge Discovery from Data (TKDD)"
+
+# Awards and achievements
+awards:
+  - title: "Academic Scholarship"
+    organization: "Arizona State University"
+    year: "Fall 2018"
+    type: "Academic"
+  - title: "Best Under-Graduate Researcher Award"
+    organization: "Previous Institution"
+    year: "2017-2018"
+    type: "Research"
+
+# Research workshops and outreach
+workshops:
+  organized:
+    - title: "Getting started with Machine Learning"
+      audience: "Freshmen and Sophomore students"
+      location: "Pondicherry University, India"
+      type: "Hands-on workshop"
+      description: "Kickstarting AI journey for undergraduate students"
+    - title: "Basics of Graph Neural Networks and its applications"
+      location: "Pondicherry University, India"
+      type: "Hands-on workshop"
+      description: "Introduction to GNN concepts and practical applications"
+
+# Research interests (detailed)
+research_interests:
+  primary:
+    - name: "Causal Inference and Causal Graph Learning"
+      description: "Developing frameworks for understanding cause-and-effect relationships in complex systems"
+    - name: "Multi-Agent Reinforcement Learning"
+      description: "Creating intelligent agents that learn and collaborate in complex environments"
+    - name: "Large Language Model Reasoning"
+      description: "Enhancing LLM interpretability and reasoning through causal modeling"
+    - name: "Privacy-Preserving Machine Learning"
+      description: "Developing methods to protect sensitive information while maintaining model utility"
+  secondary:
+    - "Anomaly Detection in Cyber-Physical Systems"
+    - "Automated Feature Engineering"
+    - "Knowledge Graph Construction and Reasoning"
+    - "Data-centric AI Approaches"
+    - "Generative AI for Data Augmentation"
+
+# Current research projects
+current_projects:
+  - title: "Enhancing LLM Interpretability through Probabilistic Causal Modeling"
+    status: "In Progress"
+    description: "Developing methodologies to construct causal knowledge graphs from LLMs"
+    funding: "NSF Grant"
+  - title: "Causal-Aware Multi-Agent RL for Material Science"
+    status: "In Progress"
+    description: "AI-driven material science simulations for DOW Chemicals"
+    funding: "NAE Frontiers of Engineering Grant"
+
+# Contact preferences
+contact:
+  email: "malarkkanarunvignesh@gmail.com"
+  phone: "+1-480-255-2954"
+  linkedin: "https://linkedin.com/in/arunvignesh28"
+  github: "https://github.com/arunvignesh28"
+  location: "Tempe, Arizona, USA"
+  availability: "Open to internship and collaboration opportunities"
+  preferred_contact: "email"
+
+# Career objectives
+career_objectives:
+  current_search: "Applied Scientist / Machine Learning Research Internship"
+  interests:
+    - "Industry Research Labs"
+    - "Tech Companies (FAANG+)"
+    - "AI Startups"
+    - "Government Research Institutions"
+  focus_areas:
+    - "Causal AI Applications"
+    - "LLM Development and Safety"
+    - "Reinforcement Learning Systems"
+    - "Privacy-Preserving AI"
+
+# Google Analytics (optional)
+google_analytics: "G-jIFv3pIAAAAJ"  # Replace with your tracking ID
+
+# SEO settings
+seo:
+  type: "Person"
+  name: "Arun Vignesh Malarkkan"
+  job_title: "Ph.D. Candidate in Computer Science"
+  description: "Specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI at Arizona State University"
+  image: "/images/profile.jpg"
+  links:
+    - "https://github.com/arunvignesh28"
+    - "https://linkedin.com/in/arunvignesh28"
+    - "https://arunvignesh28.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: America/Phoenix  # Arizona timezone
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Include/Exclude files
+include:
+  - _pages
+  - files
+  - images
+  - .htaccess
+  
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - run_server.sh
+  - requirements.txt
+  - "*.gem"
+  - "*.gemspec"
+  - Rakefile
+  - CHANGELOG.md
+  - LICENSE
+  - vendor
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Default settings for collections
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Arun Vignesh Malarkkan"
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Site verification (for search engines)
+google_site_verification: ""  # Add your Google verification code
+bing_site_verification: ""    # Add your Bing verification code
+
+# Social media meta tags
+social_media:
+  twitter:
+    username: ""  # Add your Twitter handle if you have one
+    card: "summary_large_image"
+  facebook:
+    publisher: ""  # Add your Facebook page if you have one
+  linkedin:
+    username: "arunvignesh28"
+
+# Archive settings
+archive:
+  type: "monthly"
+  layout: "archive"
+  enabled: true
+
+# Search settings
+search:
+  enabled: true
+  provider: "simple"  # Can be changed to algolia, google, etc.
+
+# Comments (if you want to enable comments on blog posts)
+comments:
+  provider: ""  # Can be disqus, utterances, etc.
+  
+# Analytics and tracking
+analytics:
+  google:
+    tracking_id: "G-jIFv3pIAAAAJ"  # Replace with your tracking ID
+  enabled: true
+
+# Performance settings
+sass:
+  style: compressed
+  
+# Security settings
+strict_front_matter: true
+
+# Development settings
+livereload: true
+incremental: true
+
+# Custom variables for your site
+custom:
+  name: "Arun Vignesh Malarkkan"
+  tagline: "Ph.D. Candidate in Computer Science"
+  bio: "Specializing in Causal Machine Learning, Reinforcement Learning, and Data-centric AI"
+  avatar: "/images/profile.jpg"
+  location: "Tempe, Arizona, USA"
+  university: "Arizona State University"
+  status: "Seeking Applied Scientist/ML Research Internship opportunities"

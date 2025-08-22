@@ -1,0 +1,28 @@
+{
+  "total_citations": 150,
+  "h_index": 8,
+  "i10_index": 5,
+  "publications_count": 8,
+  "conferences": 5,
+  "journals": 3,
+  "workshops": 2,
+  "preprints": 1,
+  "current_year_citations": 45,
+  "most_cited_paper": {
+    "title": "Most Cited Paper Title",
+    "citations": 35,
+    "year": 2022
+  },
+  "research_areas": [
+    "Machine Learning",
+    "Computer Vision",
+    "Natural Language Processing"
+  ],
+  "collaboration_stats": {
+    "total_coauthors": 15,
+    "international_collaborations": 8,
+    "institutional_collaborations": 5
+  },
+  "last_updated": "2025-01-01T00:00:00Z",
+  "note": "Auto-generated statistics from Google Scholar and publication data"
+}
