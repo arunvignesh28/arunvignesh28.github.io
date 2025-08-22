@@ -222,8 +222,13 @@ def main():
     scholar_id = os.getenv('GOOGLE_SCHOLAR_ID')
     
     if not scholar_id:
-        print("Error: GOOGLE_SCHOLAR_ID environment variable not set")
-        print("Please set your Google Scholar ID in GitHub Secrets")
+        # Use hardcoded Scholar ID as fallback
+        scholar_id = 'jIFv3pIAAAAJ'  # Arun's actual Scholar ID
+        print(f"Warning: GOOGLE_SCHOLAR_ID environment variable not set")
+        print(f"Using hardcoded Scholar ID: {scholar_id}")
+    
+    if not scholar_id:
+        print("Error: No Google Scholar ID available")
         return False
     
     print(f"Starting Scholar update for ID: {scholar_id}")
