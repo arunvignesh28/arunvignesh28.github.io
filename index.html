@@ -841,8 +841,9 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="#" class="logo" aria-label="Home">
-                <img src="./images/favicon.ico" alt="Logo" style="height:32px;width:32px;vertical-align:middle;border-radius:6px;" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth',block:'start'});" style="cursor:pointer;">
+            <a href="#" class="logo" aria-label="Home" style="display: flex; align-items: center; gap: 0.5rem;"></a>
+                <img src="./images/favicon.ico" alt="Logo" style="height:32px;width:32px;vertical-align:middle;border-radius:6px;cursor:pointer;" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth',block:'start'});">
+                <span style="font-size: 1.2rem; font-weight: 700; color: var(--secondary-color);">Arun Vignesh</span>
             </a>
             <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                 <i class="fas fa-bars"></i>
