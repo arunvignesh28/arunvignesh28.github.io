@@ -161,14 +161,16 @@
             color: #555;
         }
 
-        /* Hero Section */
+        /* IMPROVED Hero Section - Profile image on top */
         .hero {
             padding: 120px 0 80px;
             background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
             color: white;
-            text-align: center;
             position: relative;
             overflow: hidden;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
         }
 
         .hero::before {
@@ -187,73 +189,98 @@
             100% { transform: translateY(-1000px) rotate(360deg); }
         }
 
+        /* FIXED: Better grid alignment with profile image on top */
         .hero-content {
             display: grid;
-            grid-template-columns: 1fr 300px 1fr;
-            align-items: center;
-            gap: 2rem;
-            max-width: 1000px;
+            grid-template-rows: auto 1fr;
+            gap: 3rem;
+            max-width: 1100px;
             margin: 0 auto;
             position: relative;
             z-index: 1;
+            width: 100%;
+            text-align: center;
         }
 
+        /* FIXED: Text alignment - centered since image is on top */
         .hero-text {
-            text-align: left;
+            text-align: center;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .hero h1 {
             font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             line-height: 1.2;
         }
 
         .hero .subtitle {
             font-size: 1.3rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
             opacity: 0.9;
             font-weight: 300;
         }
 
         .hero .description {
             font-size: 1.1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             opacity: 0.8;
             line-height: 1.8;
+            max-width: 100%;
         }
 
+        /* FIXED: Profile image centering and sizing */
         .profile-image {
-            width: 250px;
-            height: 250px;
+            width: 280px;
+            height: 280px;
             border-radius: 50%;
             object-fit: cover;
             border: 5px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease;
+            justify-self: center;
         }
 
         .profile-image:hover {
             transform: scale(1.05);
         }
 
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--success-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        /* FIXED: Button alignment - centered */
         .cta-buttons {
             display: flex;
-            gap: 1rem;
-            justify-content: flex-start;
+            gap: 1.2rem;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn {
-            padding: 12px 30px;
+            padding: 14px 32px;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
             border: none;
             cursor: pointer;
+            font-size: 1rem;
         }
 
         .btn-primary {
@@ -281,18 +308,6 @@
             color: var(--gradient-start);
         }
 
-        /* Status Badge */
-        .status-badge {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: var(--success-color);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
         /* Sections */
         .section {
             padding: 80px 0;
@@ -313,20 +328,23 @@
         .section-subtitle {
             font-size: 1.2rem;
             color: var(--gray-600);
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+            line-height: 1.6;
         }
 
-        /* About Section */
+        /* IMPROVED About Section */
         .about {
             background: var(--light-bg);
         }
 
+        /* FIXED: About content grid alignment */
         .about-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+            align-items: start;
+            margin-bottom: 3rem;
         }
 
         .about-text {
@@ -336,40 +354,43 @@
         }
 
         .about-text p {
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
+        /* FIXED: Stats grid alignment and spacing */
         .stats {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
         }
 
         .stat-item {
             text-align: center;
-            padding: 1.5rem;
+            padding: 2rem 1.5rem;
             background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
         .stat-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
         }
 
         .stat-number {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary-color);
             display: block;
+            margin-bottom: 0.5rem;
         }
 
         .stat-label {
             color: var(--gray-600);
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-top: 0.5rem;
+            font-weight: 500;
         }
 
         /* Research Section */
@@ -649,7 +670,23 @@
             background: var(--primary-color);
         }
 
-        /* Responsive Design */
+        /* IMPROVED Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                gap: 2.5rem;
+                max-width: 800px;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
         @media (max-width: 768px) {
             .mobile-menu-toggle {
                 display: block;
@@ -671,45 +708,95 @@
                 display: flex;
             }
 
+            .hero {
+                padding: 100px 0 60px;
+                min-height: auto;
+            }
+
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
+            .hero .subtitle {
+                font-size: 1.1rem;
             }
 
-            .hero-text {
-                text-align: center;
+            .hero .description {
+                font-size: 1rem;
+                margin-bottom: 2rem;
             }
 
             .profile-image {
-                width: 200px;
-                height: 200px;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
+                width: 220px;
+                height: 220px;
             }
 
             .cta-buttons {
                 justify-content: center;
-                flex-direction: column;
-                align-items: center;
+                gap: 1rem;
+            }
+
+            .btn {
+                padding: 12px 24px;
+                font-size: 0.9rem;
             }
 
             .section-title {
                 font-size: 2rem;
             }
 
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .stat-item {
+                padding: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
             .research-grid,
             .experience-grid {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero-content {
+                gap: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .profile-image {
+                width: 180px;
+                height: 180px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+
+            .status-badge {
+                font-size: 0.8rem;
+                padding: 0.6rem 1.2rem;
             }
         }
 
@@ -771,18 +858,19 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- IMPROVED Hero Section - Profile image on top -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="./images/profile.jpg" alt="Arun Vignesh Malarkkan" class="profile-image">
-                </div>
-                <!-- <div class="status-badge">
-                    <i class="fas fa-circle" style="color: #27ae60; font-size: 0.7rem;"></i>
-                    Open to Opportunities
-                </div> -->
+                <!-- Profile image first (on top) -->
+                <img src="./images/profile.jpg" alt="Arun Vignesh Malarkkan" class="profile-image">
+                
+                <!-- Text content below the image -->
                 <div class="hero-text">
+                    <!-- <div class="status-badge">
+                        <i class="fas fa-circle" style="color: #27ae60; font-size: 0.7rem;"></i>
+                        Open to Opportunities
+                    </div> -->
                     <h1>Arun Vignesh Malarkkan</h1>
                     <div class="subtitle">Ph.D. Student in Computer Science | AI Researcher</div>
                     <div class="description">
@@ -801,19 +889,17 @@
                         </a>
                     </div>
                 </div>
-                <!-- <img src="./images/profile.jpg" alt="Arun Vignesh Malarkkan" class="profile-image"> -->
-                <div></div> <!-- Empty div for grid spacing -->
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- IMPROVED About Section -->
     <section id="about" class="section about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">
-                    Ph.D. Candidate passionate about advancing AI through causal understanding and robust learning
+                    Translating complex data into reliable decisions with causally-informed machine learning.
                 </p>
             </div>
             <div class="about-content">
@@ -849,10 +935,6 @@
                         <span class="stat-number" id="citationsCount">16</span>
                         <div class="stat-label">Citations</div>
                     </div>
-                    <!-- <div class="stat-item">
-                        <span class="stat-number">2</span>
-                        <div class="stat-label">Years PhD</div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -912,14 +994,14 @@
             <div class="section-header">
                 <h2 class="section-title">Professional Experience</h2>
                 <p class="section-subtitle">
-                    Industry and research experience in software development and real-time AI systems.
+                    Industry experience in software development and real-time AI systems.
                 </p>
             </div>
             <div class="experience-grid">
                 <div class="experience-card">
                     <div class="company">DOW Chemicals</div>
                     <div class="role">Doctoral Researcher</div>
-                    <div class="duration">June 2025 – Present</div>
+                    <div class="duration">June 2025 — Present</div>
                     <p>
                         Research collaboration under National Academy of Engineering (NAE) Frontiers of Engineering grant. 
                         Developing causal-aware multi-agent reinforcement learning frameworks for AI-driven material science 
@@ -929,7 +1011,7 @@
                 <div class="experience-card">
                     <div class="company">Fidelity Investments</div>
                     <div class="role">Senior Software Engineer</div>
-                    <div class="duration">January 2023 – June 2023</div>
+                    <div class="duration">January 2023 — June 2023</div>
                     <p>
                         Tech-lead for developing end-to-end retirement goal financial projections. Orchestrated project 
                         retirement goal savings framework based on Monte Carlo simulations. Developed ensemble outlier 
@@ -939,7 +1021,7 @@
                 <div class="experience-card">
                     <div class="company">Amazon Alexa AI</div>
                     <div class="role">Software Development Engineer</div>
-                    <div class="duration">June 2021 – January 2023</div>
+                    <div class="duration">June 2021 — January 2023</div>
                     <p>
                         Implemented end-to-end voice (VUI) purchase flow for Skills requiring Parental Consents, enabling 
                         HIPAA compliance. Developed Purchase Likelihood Score model that drove the Alexa Purchase Recommender 
@@ -950,7 +1032,7 @@
                 <div class="experience-card">
                     <div class="company">ASU Decision Center</div>
                     <div class="role">Data Scientist / Software Developer</div>
-                    <div class="duration">June 2020 – May 2021</div>
+                    <div class="duration">June 2020 — May 2021</div>
                     <p>
                         Developed outlier prediction models for financial plans, school populations, and infrastructure. 
                         Designed end-to-end ETL pipelines and AWS Lambdas for data ingestion and analysis. Implemented 
@@ -967,7 +1049,7 @@
             <div class="section-header">
                 <h2 class="section-title">Publications</h2>
                 <p class="section-subtitle">
-                    Recent work and contributions to Causal ML, Reinforcement Learning, and Data-centric AI
+                    Recent contributions to Causal ML, Reinforcement Learning, and Data-centric AI research.
                 </p>
             </div>
             <div id="publicationsList">
@@ -1004,7 +1086,7 @@
                         <strong>Arun Vignesh Malarkkan</strong>, H. Bai, D. Wang, Y. Fu
                     </div>
                     <div class="pub-venue">
-                        arXiv preprint arXiv:2508.09504 (Under Review – ACM TKDD), 2025
+                        arXiv preprint arXiv:2508.09504 (Under Review — ACM TKDD), 2025
                     </div>
                     <div class="pub-links">
                         <a href="https://arxiv.org/pdf/2508.09504" class="pub-link">
@@ -1028,7 +1110,7 @@
                         <strong>Arun Vignesh Malarkkan</strong>, D. Wang, H. Bai, Y. Fu
                     </div>
                     <div class="pub-venue">
-                        arXiv preprint arXiv:2507.14387 (Under Review – IEEE TBD), 2025
+                        arXiv preprint arXiv:2507.14387 (Under Review — IEEE TBD), 2025
                     </div>
                     <div class="pub-links">
                         <a href="https://arxiv.org/pdf/2507.14387" class="pub-link">
@@ -1052,7 +1134,7 @@
                         <strong>Arun Vignesh Malarkkan</strong>, Y. Fu
                     </div>
                     <div class="pub-venue">
-                        Under Review – AAAI 2025
+                        Under Review — AAAI 2025
                     </div>
                     <div class="pub-links">
                         <a href="files/papers/cafe_aaai2025.pdf" class="pub-link">
@@ -1076,7 +1158,7 @@
                         <strong>Arun Vignesh Malarkkan</strong>, Y. Fu
                     </div>
                     <div class="pub-venue">
-                        Under Review – ICDM 2025
+                        Under Review — ICDM 2025
                     </div>
                     <div class="pub-links">
                         <a href="files/papers/delta_icdm2025.pdf" class="pub-link">
