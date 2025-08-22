@@ -2,14 +2,10 @@ name: Update Google Scholar Citations
 
 on:
   schedule:
-    # Run daily at 8:00 UTC
     - cron: '0 8 * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
   push:
     branches: [ main ]
-    paths:
-      - '_config.yml'
-      - '_data/publications.yml'
 
 jobs:
   update-citations:
@@ -29,7 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests beautifulsoup4 scholarly
+        pip install PyYAML requests beautifulsoup4 scholarly lxml python-dateutil urllib3 certifi
 
     - name: Update Google Scholar data
       env:
