@@ -63,7 +63,7 @@
       "authors": "AV Malarkkan, H Bai, X Wang, A Kaushik, D Wang, Y Fu",
       "venue": "arXiv preprint arXiv:2507.08177",
       "year": "2025",
-      "citations": 2,
+      "citations": 3,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:9yKSN-GCB0IC",
       "eprint_url": "https://arxiv.org/abs/2507.08177",
       "abstract": "Vision paper proposing causality-driven approaches for spatio-temporal anomaly detection in cybersecurity applications.",
@@ -76,7 +76,7 @@
       "authors": "W Ying, C Wei, N Gong, X Wang, H Bai, AV Malarkkan, S Dong, D Wang, D Zhang, Y Fu",
       "venue": "arXiv preprint arXiv:2502.08828",
       "year": "2025",
-      "citations": 8,
+      "citations": 10,
       "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=jIFv3pIAAAAJ&citation_for_view=jIFv3pIAAAAJ:qjMakFHDy7sC",
       "eprint_url": "https://arxiv.org/abs/2502.08828",
       "abstract": "Comprehensive survey on data-centric AI approaches focusing on tabular learning from RL and generative AI perspectives.",
@@ -101,15 +101,15 @@
     {
       "title": "DELTA: Privacy-Preserving Generative Data Reprogramming",
       "authors": "AV Malarkkan, Y Fu",
-      "venue": "Under Review - ICDM 2025",
+      "venue": "Proceedings of the 25th IEEE International Conference on Data Mining, 2025",
       "year": "2025",
       "citations": 0,
       "scholar_url": "",
-      "eprint_url": "",
+      "eprint_url": "https://arxiv.org/abs/2509.00693",
       "abstract": "Two-phase framework combining reinforcement learning and variational generative modeling for feature transformation with 9% performance gain and 35% privacy leakage reduction.",
       "type": "conference_submission",
-      "status": "under_review",
-      "venue_full": "Under Review - IEEE International Conference on Data Mining 2025",
+      "status": "Accepted",
+      "venue_full": "Proceedings of the 25th IEEE International Conference on Data Mining 2025",
       "featured": true
     }
   ],
@@ -125,22 +125,22 @@
   ],
   "coauthors": [
     {
-      "name": "Yinghui (Catherine) Fu",
+      "name": "Yanjie Fu",
       "affiliation": "Arizona State University",
       "collaborations": 7
     },
     {
-      "name": "Dawei Wang", 
-      "affiliation": "Arizona State University",
+      "name": "Dongjie Wang", 
+      "affiliation": "University of Kansas",
       "collaborations": 4
     },
     {
-      "name": "Hanqing Bai",
+      "name": "Haoyue Bai",
       "affiliation": "Arizona State University", 
       "collaborations": 4
     },
     {
-      "name": "Xiaoming Wang",
+      "name": "Xinyuan Wang",
       "affiliation": "Arizona State University",
       "collaborations": 2
     }
@@ -188,7 +188,7 @@
     "conferences": [
       "ACM CIKM",
       "AAAI (under review)",
-      "ICDM (under review)"
+      "ICDM (Accepted)"
     ],
     "journals": [
       "ACM TKDD (under review)",
