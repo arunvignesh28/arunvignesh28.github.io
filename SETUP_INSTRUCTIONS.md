@@ -227,7 +227,7 @@ Add JSON-LD structured data for better search engine understanding:
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Your Name",
-  "jobTitle": "PhD Student",
+  "jobTitle": "PhD Candidate",
   "affiliation": "Your University",
   "url": "https://yourusername.github.io",
   "sameAs": [
