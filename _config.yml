@@ -122,7 +122,7 @@ publication_stats:
   under_review: 4
   preprints: 2
   first_author: 5
-  total_citations: 16  # Update with actual count
+  total_citations: 20  # Update with actual count
   h_index: 2  # Update with actual count
 
 # Notable publications (featured)

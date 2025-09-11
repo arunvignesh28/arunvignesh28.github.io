@@ -107,7 +107,7 @@ Edit the publications section in `index.html`:
      year: 2024
      pdf: "files/papers/paper1.pdf"
      code: "https://github.com/you/project"
-     citations: 16
+     citations: 20
    ```
 
 2. **Create dynamic publication list** (requires Jekyll processing):
