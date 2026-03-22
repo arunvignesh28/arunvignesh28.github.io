@@ -122,22 +122,36 @@ class ScholarUpdater:
                 'publications': publications,
                 'last_updated': datetime.now().isoformat()
             }
-            
+
             # Create _data directory if it doesn't exist
             os.makedirs('_data', exist_ok=True)
-            
+
             # Write scholar data
             with open('_data/scholar.json', 'w') as f:
                 json.dump(scholar_data, f, indent=2)
-            
+
             print("Updated _data/scholar.json")
-            
+
+            # Write root-level scholar_data.json for live JS fetching
+            root_data = {
+                'total_citations': metrics.get('total_citations', 0),
+                'h_index': metrics.get('h_index', 0),
+                'i10_index': metrics.get('i10_index', 0),
+                'publications_count': len(publications),
+                'last_updated': datetime.now().isoformat(),
+                'scholar_url': f'https://scholar.google.com/citations?user={self.scholar_id}'
+            }
+            with open('scholar_data.json', 'w') as f:
+                json.dump(root_data, f, indent=2)
+
+            print("Updated scholar_data.json")
+
             # Update publications.yml if it exists
             if os.path.exists('_data/publications.yml'):
                 self.update_publications_yml(publications)
-            
+
             return True
-            
+
         except Exception as e:
             print(f"Error updating data files: {e}")
             return False
