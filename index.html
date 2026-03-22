@@ -1412,7 +1412,6 @@
         function animateNumber(element, target, duration = 2000) {
             let start = 0;
             const increment = target / (duration / 16);
-            
             function updateNumber() {
                 start += increment;
                 if (start < target) {
@@ -1425,6 +1424,17 @@
             updateNumber();
         }
 
+        // Track whether stats are in view and whether data has loaded
+        let scholarDataReady = false;
+        let statsInView = false;
+
+        function animateStats() {
+            const pubEl = document.getElementById('publicationsCount');
+            const citEl = document.getElementById('citationsCount');
+            if (pubEl) animateNumber(pubEl, parseInt(pubEl.dataset.target || pubEl.textContent));
+            if (citEl) animateNumber(citEl, parseInt(citEl.dataset.target || citEl.textContent));
+        }
+
         // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
@@ -1435,11 +1445,11 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('fade-in-up');
-                    
-                    // Animate stats numbers when they come into view
+
                     if (entry.target.querySelector('#publicationsCount')) {
-                        animateNumber(document.getElementById('publicationsCount'), parseInt(document.getElementById('publicationsCount').dataset.target || '11'));
-                        animateNumber(document.getElementById('citationsCount'), parseInt(document.getElementById('citationsCount').dataset.target || '20'));
+                        statsInView = true;
+                        // Only animate once data is loaded so we use the correct values
+                        if (scholarDataReady) animateStats();
                     }
                 }
             });
@@ -1472,11 +1482,15 @@
 
                 if (data.last_updated) {
                     const updated = new Date(data.last_updated).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-                    const existing = document.getElementById('scholarLastUpdated');
-                    if (existing) existing.textContent = 'Citations last updated: ' + updated;
+                    const el = document.getElementById('scholarLastUpdated');
+                    if (el) el.textContent = 'Citations last updated: ' + updated;
                 }
             } catch (error) {
                 console.warn('Could not load scholar_data.json, using defaults:', error);
+            } finally {
+                // Mark data as ready and trigger animation if stats are already visible
+                scholarDataReady = true;
+                if (statsInView) animateStats();
             }
         }
 

@@ -25,11 +25,16 @@ class ScholarUpdater:
         self.setup_proxy()
         
     def setup_proxy(self):
-        """Setup proxy to avoid rate limiting"""
+        """Setup proxy to avoid rate limiting (optional, skipped if unavailable)"""
+        use_proxy = os.getenv('USE_SCHOLARLY_PROXY', '').lower() == 'true'
+        if not use_proxy:
+            print("Skipping proxy setup (set USE_SCHOLARLY_PROXY=true to enable)")
+            return
         try:
             pg = ProxyGenerator()
             pg.FreeProxies()
             scholarly.use_proxy(pg)
+            print("Proxy configured.")
         except Exception as e:
             print(f"Warning: Could not setup proxy: {e}")
             print("Continuing without proxy...")
