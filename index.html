@@ -835,6 +835,304 @@
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
+
+        /* ── News Section ── */
+        .news {
+            background: white;
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.2rem 1.5rem;
+            background: var(--light-bg);
+            border-radius: 10px;
+            border-left: 4px solid var(--gradient-start);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .news-item:hover {
+            transform: translateX(4px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .news-date {
+            flex-shrink: 0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gradient-start);
+            background: rgba(102,126,234,0.1);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            white-space: nowrap;
+            margin-top: 2px;
+        }
+
+        .news-text {
+            color: #444;
+            font-size: 0.97rem;
+            line-height: 1.5;
+        }
+
+        .news-text strong { color: var(--secondary-color); }
+
+        .news-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.15rem 0.6rem;
+            border-radius: 10px;
+            margin-right: 0.4rem;
+            vertical-align: middle;
+        }
+
+        .news-tag.paper   { background: rgba(52,152,219,0.15); color: #2980b9; }
+        .news-tag.award   { background: rgba(241,196,15,0.2);  color: #b7950b; }
+        .news-tag.talk    { background: rgba(39,174,96,0.15);  color: #1e8449; }
+        .news-tag.service { background: rgba(155,89,182,0.15); color: #8e44ad; }
+
+        /* ── Skills Section ── */
+        .skills { background: var(--light-bg); }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .skills-group {
+            background: white;
+            border-radius: 15px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .skills-group-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--gradient-start);
+            margin-bottom: 1rem;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            padding: 0.3rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: var(--gray-100);
+            color: #444;
+            border: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .skill-tag:hover {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            color: white;
+            border-color: transparent;
+        }
+
+        /* ── Publication Tabs ── */
+        .pub-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-tab {
+            padding: 0.5rem 1.4rem;
+            border-radius: 25px;
+            border: 2px solid #ddd;
+            background: white;
+            color: #555;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .pub-tab:hover { border-color: var(--primary-color); color: var(--primary-color); }
+
+        .pub-tab.active {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-color: transparent;
+            color: white;
+        }
+
+        .pub-year-group { margin-bottom: 2.5rem; }
+
+        .pub-year-label {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--gray-600);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gray-100);
+        }
+
+        /* ── Awards Section ── */
+        .awards { background: white; }
+
+        .awards-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .award-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.4rem 1.8rem;
+            background: var(--light-bg);
+            border-radius: 12px;
+            transition: transform 0.2s ease;
+        }
+
+        .award-item:hover { transform: translateY(-2px); }
+
+        .award-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .award-icon i { color: white; font-size: 1.2rem; }
+
+        .award-year {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #f39c12;
+        }
+
+        .award-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+
+        .award-org {
+            font-size: 0.88rem;
+            color: var(--gray-600);
+            margin-top: 0.15rem;
+        }
+
+        /* ── Academic Service Section ── */
+        .service { background: var(--light-bg); }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+        }
+
+        .service-card-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .service-card-title i {
+            color: var(--gradient-start);
+        }
+
+        .service-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .service-list li {
+            font-size: 0.9rem;
+            color: #555;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--gradient-start);
+        }
+
+        /* ── Citation count badge on publications ── */
+        .pub-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .pub-citations {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .pub-citations i { color: #f39c12; }
+
+        /* ── Divider ── */
+        .section-divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 2px;
+            margin: 1rem auto 0;
+        }
+
+        /* ── Responsive additions ── */
+        @media (max-width: 768px) {
+            .news-item { flex-direction: column; gap: 0.6rem; }
+            .pub-tabs { gap: 0.4rem; }
+            .pub-tab { padding: 0.4rem 1rem; font-size: 0.85rem; }
+            .award-item { flex-direction: column; text-align: center; }
+        }
     </style>
 </head>
 <body>
@@ -849,6 +1147,7 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -893,12 +1192,81 @@
         </div>
     </section>
 
+    <!-- News & Updates Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:2.5rem;">
+                <h2 class="section-title">News &amp; Updates</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">Mar 2026</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>CAFE</strong> and <strong>Distribution Shift Aware Neural Tabular Learning</strong> submitted to <strong>ICML 2026</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Mar 2026</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>FinRule-Bench</strong>, <strong>Rethinking Data Augmentation</strong>, and <strong>Evolving Demonstration Optimization</strong> submitted to <strong>KDD 2026</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Dec 2025</span>
+                    <div class="news-text">
+                        <span class="news-tag talk">Keynote</span>
+                        Delivered keynote talk <em>"Beyond Correlation: Can Causal Reasoning Enhance Modern AI Models?"</em> at <strong>IEEE MoSICom 2025</strong>, BITS Pilani, UAE.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Dec 2025</span>
+                    <div class="news-text">
+                        <span class="news-tag award">Award</span>
+                        Received the <strong>IEEE ICDM Scholarship</strong> at the IEEE International Conference on Data Mining 2025.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Nov 2025</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming</strong> accepted at <strong>IEEE ICDM 2025</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Nov 2025</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>Causal Graph Profiling via Structural Divergence</strong> accepted at <strong>IEEE BigData 2025</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Jun 2025</span>
+                    <div class="news-text">
+                        <span class="news-tag service">Research</span>
+                        Started as <strong>Doctoral Researcher at DOW Chemicals</strong> under the National Academy of Engineering Grant.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Oct 2024</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>Multi-view Causal Graph Fusion Based Anomaly Detection</strong> published at <strong>ACM CIKM 2024</strong>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- IMPROVED About Section -->
     <section id="about" class="section about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">
+                <div class="section-divider"></div>
+                <p class="section-subtitle" style="margin-top:1.2rem;">
                     Translating complex data into reliable decisions with causally-informed machine learning.
                 </p>
             </div>
@@ -942,9 +1310,17 @@
                         <div class="stat-label">Publications</div>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" id="citationsCount" data-target="20">20</span>
+                        <span class="stat-number" id="citationsCount" data-target="43">43</span>
                         <div class="stat-label">Citations</div>
                         <div style="font-size:0.75rem; color: var(--gray-600); margin-top:0.5rem;" id="scholarLastUpdated"></div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="hIndexCount" data-target="4">4</span>
+                        <div class="stat-label">H-Index</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="i10IndexCount" data-target="1">1</span>
+                        <div class="stat-label">i10-Index</div>
                     </div>
                 </div>
             </div>
@@ -956,44 +1332,125 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Research Areas</h2>
-                <p class="section-subtitle">
-                    Exploring the challenges of building robust and interpretable AI systems.
+                <div class="section-divider"></div>
+                <p class="section-subtitle" style="margin-top:1.2rem;">
+                    Building AI systems that reason reliably — not just accurately.
                 </p>
             </div>
             <div class="research-grid">
                 <div class="research-card">
                     <div class="research-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>LLM Reliability &amp; Mechanistic Interpretability</h3>
+                    <p>
+                        Investigating whether LLMs encode causally invariant reasoning mechanisms or rely on
+                        spurious correlations. Developing causal mediation frameworks over intermediate tokens
+                        using activation patching and counterfactual inputs — identifying the sparse subset of
+                        tokens that act as stable causal mediators.
+                    </p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
                         <i class="fas fa-project-diagram"></i>
                     </div>
-                    <h3>Causal Machine Learning</h3>
+                    <h3>Causal Inference &amp; Representation Learning</h3>
                     <p>
-                        Developing causal graph learning frameworks for robust anomaly detection in 
-                        cyber-physical systems. Focus on causal inference, structural divergence analysis, 
-                        and multi-view causal graph fusion for interpretable AI solutions that understand 
-                        cause-and-effect relationships in complex systems.
+                        Designing causal graph learning frameworks for invariant modeling under distribution shift.
+                        Work spans causal disentanglement for privacy-preserving reprogramming, structural
+                        divergence for anomaly detection in cyber-physical systems, and incremental causal
+                        learning for streaming environments.
                     </p>
                 </div>
                 <div class="research-card">
                     <div class="research-icon">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Multi-Agent Reinforcement Learning</h3>
+                    <h3>Causally-Guided Multi-Agent RL &amp; Data-Centric AI</h3>
                     <p>
-                        Creating causally-guided automated feature engineering frameworks using multi-agent 
-                        RL. Developing reward shaping strategies and causal-aware agents for improved 
-                        interpretability and efficiency in material science simulations and complex decision-making tasks.
+                        Building neurosymbolic, causally-aware multi-agent RL frameworks for automated
+                        feature engineering and materials discovery. Integrating causal structure with
+                        sequential decision-making to improve robustness under distribution shifts in
+                        industrial simulation environments.
                     </p>
                 </div>
-                <div class="research-card">
-                    <div class="research-icon">
-                        <i class="fas fa-brain"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-flask" style="margin-right:0.4rem;"></i>Core Research</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LLM Reasoning &amp; Reliability</span>
+                        <span class="skill-tag">Causal Inference</span>
+                        <span class="skill-tag">Mechanistic Interpretability</span>
+                        <span class="skill-tag">Causal Representation Learning</span>
+                        <span class="skill-tag">Invariance Discovery</span>
+                        <span class="skill-tag">Post-training &amp; Fine-tuning</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Data-Centric AI</span>
                     </div>
-                    <h3>LLM Reasoning & Data-centric AI</h3>
-                    <p>
-                        Enhancing Large Language Model interpretability through probabilistic causal modeling 
-                        on knowledge graphs. Advancing LLM reasoning capabilities and developing privacy-preserving 
-                        generative data reprogramming techniques for robust and trustworthy AI systems.
-                    </p>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-microchip" style="margin-right:0.4rem;"></i>ML &amp; Systems</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">HuggingFace Transformers</span>
+                        <span class="skill-tag">DeepSpeed</span>
+                        <span class="skill-tag">Distributed Training</span>
+                        <span class="skill-tag">GPU/CUDA</span>
+                        <span class="skill-tag">vLLM</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-eye" style="margin-right:0.4rem;"></i>Interpretability Tools</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TransformerLens</span>
+                        <span class="skill-tag">Activation Patching</span>
+                        <span class="skill-tag">Linear Probing</span>
+                        <span class="skill-tag">PyTorch Hooks</span>
+                        <span class="skill-tag">Representation Analysis</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-code" style="margin-right:0.4rem;"></i>LLM &amp; Generative AI</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PEFT / LoRA / QLoRA</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LlamaIndex</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">Vertex AI</span>
+                        <span class="skill-tag">Weights &amp; Biases</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-cloud" style="margin-right:0.4rem;"></i>Infrastructure &amp; Data</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (SageMaker, RDS, DynamoDB)</span>
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Pandas / NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">AutoGluon</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <div class="skills-group-title"><i class="fas fa-keyboard" style="margin-right:0.4rem;"></i>Programming</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">TypeScript</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1004,8 +1461,9 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Professional Experience</h2>
-                <p class="section-subtitle">
-                    Industry experience in software development and real-time AI systems.
+                <div class="section-divider"></div>
+                <p class="section-subtitle" style="margin-top:1.2rem;">
+                    Industry experience spanning AI research, ML systems, and software engineering.
                 </p>
             </div>
             <div class="experience-grid">
@@ -1059,13 +1517,22 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Publications</h2>
-                <p class="section-subtitle">
-                    Recent contributions to Causal ML, Reinforcement Learning, and Data-centric AI research.
+                <div class="section-divider"></div>
+                <p class="section-subtitle" style="margin-top:1.2rem;">
+                    Recent contributions to Causal ML, LLM Reasoning, and Data-centric AI research.
                 </p>
             </div>
+            <div class="pub-tabs">
+                <button class="pub-tab active" onclick="filterPubs('all', this)">All</button>
+                <button class="pub-tab" onclick="filterPubs('first', this)">First Author</button>
+                <button class="pub-tab" onclick="filterPubs('co', this)">Co-Authored</button>
+            </div>
             <div id="publicationsList">
-                <div class="publication-item">
-                    <div class="pub-status published">Published</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status published">Published</div>
+                        <span class="pub-citations"><i class="fas fa-quote-right"></i> ACM CIKM 2024</span>
+                    </div>
                     <div class="pub-title">
                         Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures
                     </div>
@@ -1088,10 +1555,13 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status published">Accepted</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status published">Accepted</div>
+                        <span class="pub-citations"><i class="fas fa-quote-right"></i> IEEE ICDM 2025</span>
+                    </div>
                     <div class="pub-title">
-                        DELTA: Privacy-Preserving Generative Data Reprogramming
+                        DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming
                     </div>
                     <div class="pub-authors">
                         <strong>Arun Vignesh Malarkkan</strong>, H. Bai, A. Kaushik, Y. Fu
@@ -1112,8 +1582,11 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status published">Accepted</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status published">Accepted</div>
+                        <span class="pub-citations"><i class="fas fa-quote-right"></i> IEEE BigData 2025</span>
+                    </div>
                     <div class="pub-title">
                         Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems
                     </div>
@@ -1136,8 +1609,11 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status published">Accepted</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status published">Accepted</div>
+                        <span class="pub-citations"><i class="fas fa-quote-right"></i> IEEE TBD 2025</span>
+                    </div>
                     <div class="pub-title">
                         Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures
                     </div>
@@ -1160,8 +1636,10 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status">Under Review - ICML 2026</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — ICML 2026</div>
+                    </div>
                     <div class="pub-title">
                         CAFE: Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning
                     </div>
@@ -1184,7 +1662,7 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-category="co">
                     <div class="pub-title">
                         A Survey on Data-centric AI: Tabular Learning from Reinforcement Learning and Generative AI Perspective
                     </div>
@@ -1204,8 +1682,10 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status">Under Review - KDD 2026</div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — KDD 2026</div>
+                    </div>
                     <div class="pub-title">
                         FinRule-Bench: A Benchmark for Joint Reasoning of LLMs over Financial Tables and Principles
                     </div>
@@ -1219,8 +1699,10 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status">Under Review - KDD 2026</div>
+                <div class="publication-item" data-category="co">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — KDD 2026</div>
+                    </div>
                     <div class="pub-title">
                         Rethinking Data Augmentation under Covariate Shift: Invariant-Guided Diffusion and Prototype Reweighting
                     </div>
@@ -1234,8 +1716,10 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status">Under Review - KDD 2026</div>
+                <div class="publication-item" data-category="co">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — KDD 2026</div>
+                    </div>
                     <div class="pub-title">
                         Evolving Demonstration Optimization for Chain-of-Thought Feature Transformation
                     </div>
@@ -1249,8 +1733,10 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
-                    <div class="pub-status">Under Review - ICML 2026</div>
+                <div class="publication-item" data-category="co">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — ICML 2026</div>
+                    </div>
                     <div class="pub-title">
                         Distribution Shift Aware Neural Tabular Learning
                     </div>
@@ -1264,7 +1750,7 @@
                     </div>
                 </div>
 
-                <div class="publication-item">
+                <div class="publication-item" data-category="first">
                     <div class="pub-title">
                         Rethinking Spatio-temporal Anomaly Detection: A Vision for Causality-driven Cybersecurity
                     </div>
@@ -1296,6 +1782,100 @@
                     <i class="fas fa-folder"></i>
                     All Papers
                 </a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="awards" class="section awards">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Honors &amp; Awards</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <div class="award-year">2025</div>
+                        <div class="award-name">IEEE ICDM Scholarship</div>
+                        <div class="award-org">IEEE International Conference on Data Mining, 2025</div>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <div class="award-year">2023 – Present</div>
+                        <div class="award-name">NAE Frontiers of Engineering Grant</div>
+                        <div class="award-org">National Academy of Engineering — DOW Chemicals Doctoral Research Collaboration</div>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-star"></i></div>
+                    <div>
+                        <div class="award-year">2018</div>
+                        <div class="award-name">Academic Scholarship</div>
+                        <div class="award-org">Arizona State University, 2018</div>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-award"></i></div>
+                    <div>
+                        <div class="award-year">2017 – 2018</div>
+                        <div class="award-name">Best Undergraduate Researcher Award</div>
+                        <div class="award-org">Arizona State University</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Service Section -->
+    <section id="service" class="section service">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic Service</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-card-title"><i class="fas fa-users"></i> Program Committee</div>
+                    <ul class="service-list">
+                        <li>AAAI 2026</li>
+                        <li>IEEE ICDM 2025</li>
+                        <li>IEEE BigData 2024 — Undergraduate &amp; High School Research Symposium</li>
+                        <li>IEEE ICSCAN 2024</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-title"><i class="fas fa-search"></i> Reviewer</div>
+                    <ul class="service-list">
+                        <li>KDD</li>
+                        <li>ICLR</li>
+                        <li>NeurIPS</li>
+                        <li>ICDM</li>
+                        <li>IEEE BigData</li>
+                        <li>Urban AI</li>
+                        <li>ACM TKDD (Journal)</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-title"><i class="fas fa-chalkboard-teacher"></i> Talks &amp; Chairing</div>
+                    <ul class="service-list">
+                        <li>Keynote Speaker — IEEE MoSICom 2025, BITS Pilani UAE</li>
+                        <li>Session Chair — IEEE MoSICom 2025</li>
+                        <li>Session Chair — IEEE ICDM 2025 Undergraduate &amp; HS Research Symposium</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-title"><i class="fas fa-graduation-cap"></i> Teaching &amp; Mentorship</div>
+                    <ul class="service-list">
+                        <li>Senior TA / Lab Instructor — OOP, Data Mining, Semantic Web Mining (ASU)</li>
+                        <li>Project Manager — 30 Capstone Project Teams (ASU)</li>
+                        <li>Research Mentor — Undergraduate &amp; Graduate Researchers (Jan 2024–Present)</li>
+                        <li>IEEE Phoenix Chapter Student Volunteer &amp; Organizer</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -1375,7 +1955,7 @@
                     <i class="fas fa-file-pdf"></i>
                 </a>
             </div>
-            <p>&copy; 2025 Arun Vignesh Malarkkan. All rights reserved.</p>
+            <p>&copy; 2026 Arun Vignesh Malarkkan. All rights reserved.</p>
             <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 0.5rem;">
                 Ph.D. Candidate in School of Computing and Augmented Intelligence | Arizona State University
             </p>
@@ -1438,10 +2018,20 @@
         let statsInView = false;
 
         function animateStats() {
-            const pubEl = document.getElementById('publicationsCount');
-            const citEl = document.getElementById('citationsCount');
-            if (pubEl) animateNumber(pubEl, parseInt(pubEl.dataset.target || pubEl.textContent));
-            if (citEl) animateNumber(citEl, parseInt(citEl.dataset.target || citEl.textContent));
+            ['publicationsCount', 'citationsCount', 'hIndexCount', 'i10IndexCount'].forEach(id => {
+                const el = document.getElementById(id);
+                if (el) animateNumber(el, parseInt(el.dataset.target || el.textContent || '0'));
+            });
+        }
+
+        // Publication tab filtering
+        function filterPubs(category, btn) {
+            document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.publication-item').forEach(item => {
+                const cat = item.dataset.category || 'first';
+                item.style.display = (category === 'all' || cat === category) ? 'block' : 'none';
+            });
         }
 
         // Intersection Observer for animations
@@ -1487,6 +2077,16 @@
                 if (publicationsEl && data.publications_count !== undefined) {
                     publicationsEl.dataset.target = data.publications_count;
                     publicationsEl.textContent = data.publications_count;
+                }
+                const hEl = document.getElementById('hIndexCount');
+                if (hEl && data.h_index !== undefined) {
+                    hEl.dataset.target = data.h_index;
+                    hEl.textContent = data.h_index;
+                }
+                const i10El = document.getElementById('i10IndexCount');
+                if (i10El && data.i10_index !== undefined) {
+                    i10El.dataset.target = data.i10_index;
+                    i10El.textContent = data.i10_index;
                 }
 
                 if (data.last_updated) {
