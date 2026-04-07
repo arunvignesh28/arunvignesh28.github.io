@@ -1,284 +1,145 @@
 #!/usr/bin/env python3
 """
-Google Scholar Citation Update Script
-This script fetches citation data from Google Scholar and updates the website data files.
+Scholar metrics updater using the Semantic Scholar API.
+No scraping, no bot detection — free official API.
 """
-
 import os
 import json
-import yaml
+import sys
 import requests
 from datetime import datetime
-import time
-import re
 
-try:
-    from scholarly import scholarly, ProxyGenerator
-except ImportError:
-    print("Installing required packages...")
-    os.system("pip install scholarly")
-    from scholarly import scholarly, ProxyGenerator
+SCHOLAR_ID = os.getenv('GOOGLE_SCHOLAR_ID', 'jIFv3pIAAAAJ')
+AUTHOR_NAME_QUERY = os.getenv('SCHOLAR_NAME', 'Arun Vignesh Malarkkan')
+S2_BASE = 'https://api.semanticscholar.org/graph/v1'
+HEADERS = {
+    'User-Agent': 'scholar-updater/1.0 (academic-website auto-update; contact: github-actions)',
+}
+# Optional: set SEMANTIC_SCHOLAR_API_KEY env var for higher rate limits
+API_KEY = os.getenv('SEMANTIC_SCHOLAR_API_KEY', '')
+if API_KEY:
+    HEADERS['x-api-key'] = API_KEY
 
-class ScholarUpdater:
-    def __init__(self, scholar_id):
-        self.scholar_id = scholar_id
-        self.setup_proxy()
-        
-    def setup_proxy(self):
-        """Setup proxy to avoid rate limiting (optional, skipped if unavailable)"""
-        use_proxy = os.getenv('USE_SCHOLARLY_PROXY', '').lower() == 'true'
-        if not use_proxy:
-            print("Skipping proxy setup (set USE_SCHOLARLY_PROXY=true to enable)")
-            return
-        try:
-            pg = ProxyGenerator()
-            pg.FreeProxies()
-            scholarly.use_proxy(pg)
-            print("Proxy configured.")
-        except Exception as e:
-            print(f"Warning: Could not setup proxy: {e}")
-            print("Continuing without proxy...")
 
-    def get_author_data(self):
-        """Fetch author data from Google Scholar"""
-        try:
-            print(f"Fetching data for Scholar ID: {self.scholar_id}")
-            
-            # Search for author by ID
-            author = scholarly.search_author_id(self.scholar_id)
-            author_filled = scholarly.fill(author)
-            
-            return author_filled
-        except Exception as e:
-            print(f"Error fetching author data: {e}")
-            return None
+def find_author(google_scholar_id: str, name_query: str) -> dict | None:
+    """
+    Search Semantic Scholar for an author matching the given Google Scholar ID.
+    Falls back to the first name match if the ID is not found in externalIds.
+    """
+    url = f'{S2_BASE}/author/search'
+    params = {
+        'query': name_query,
+        'fields': 'authorId,name,affiliations,citationCount,hIndex,paperCount,externalIds',
+        'limit': 10,
+    }
+    resp = requests.get(url, params=params, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    results = resp.json().get('data', [])
 
-    def extract_metrics(self, author_data):
-        """Extract citation metrics from author data"""
-        if not author_data:
-            return {}
-            
-        try:
-            citations = author_data.get('citedby', 0)
-            h_index = author_data.get('hindex', 0)
-            i10_index = author_data.get('i10index', 0)
-            
-            # Extract yearly citation data
-            yearly_citations = []
-            if 'cites_per_year' in author_data:
-                for year, count in author_data['cites_per_year'].items():
-                    yearly_citations.append({'year': int(year), 'count': count})
-            
-            return {
-                'total_citations': citations,
-                'h_index': h_index,
-                'i10_index': i10_index,
-                'yearly_citations': sorted(yearly_citations, key=lambda x: x['year']),
-                'last_updated': datetime.now().isoformat()
-            }
-        except Exception as e:
-            print(f"Error extracting metrics: {e}")
-            return {}
+    # Prefer exact Google Scholar ID match
+    for author in results:
+        ext = author.get('externalIds') or {}
+        if ext.get('GoogleScholar') == google_scholar_id:
+            print(f"Matched author by Google Scholar ID: {author['name']}")
+            return author
 
-    def get_publications(self, author_data):
-        """Extract publication data"""
-        if not author_data:
-            return []
-            
-        publications = []
-        try:
-            for pub in author_data.get('publications', []):
-                # Fill publication details
-                try:
-                    pub_filled = scholarly.fill(pub)
-                    
-                    # Extract publication info
-                    pub_data = {
-                        'title': pub_filled.get('bib', {}).get('title', 'Unknown Title'),
-                        'authors': pub_filled.get('bib', {}).get('author', 'Unknown Authors'),
-                        'venue': pub_filled.get('bib', {}).get('venue', 'Unknown Venue'),
-                        'year': pub_filled.get('bib', {}).get('pub_year', 'Unknown'),
-                        'citations': pub_filled.get('num_citations', 0),
-                        'scholar_url': pub_filled.get('pub_url', ''),
-                        'eprint_url': pub_filled.get('eprint_url', ''),
-                        'abstract': pub_filled.get('bib', {}).get('abstract', '')[:500] + '...' if pub_filled.get('bib', {}).get('abstract', '') else ''
-                    }
-                    
-                    publications.append(pub_data)
-                    
-                    # Add delay to avoid rate limiting
-                    time.sleep(1)
-                    
-                except Exception as e:
-                    print(f"Error processing publication: {e}")
-                    continue
-                    
-        except Exception as e:
-            print(f"Error getting publications: {e}")
-            
-        return publications
+    # Fallback: first result
+    if results:
+        print(f"No exact Scholar ID match; using first result: {results[0]['name']}")
+        return results[0]
 
-    def update_data_files(self, metrics, publications):
-        """Update the website data files"""
-        try:
-            # Update scholar data JSON
-            scholar_data = {
-                'metrics': metrics,
-                'publications': publications,
-                'last_updated': datetime.now().isoformat()
-            }
+    return None
 
-            # Create _data directory if it doesn't exist
-            os.makedirs('_data', exist_ok=True)
 
-            # Write scholar data
-            with open('_data/scholar.json', 'w') as f:
-                json.dump(scholar_data, f, indent=2)
+def get_papers(s2_author_id: str) -> list[dict]:
+    """Fetch all papers for the given Semantic Scholar author ID."""
+    url = f'{S2_BASE}/author/{s2_author_id}/papers'
+    params = {
+        'fields': 'title,year,authors,venue,citationCount,externalIds,openAccessPdf',
+        'limit': 1000,
+    }
+    resp = requests.get(url, params=params, headers=HEADERS, timeout=60)
+    resp.raise_for_status()
+    return resp.json().get('data', [])
 
-            print("Updated _data/scholar.json")
 
-            # Write root-level scholar_data.json for live JS fetching
-            root_data = {
-                'total_citations': metrics.get('total_citations', 0),
-                'h_index': metrics.get('h_index', 0),
-                'i10_index': metrics.get('i10_index', 0),
-                'publications_count': len(publications),
-                'last_updated': datetime.now().isoformat(),
-                'scholar_url': f'https://scholar.google.com/citations?user={self.scholar_id}'
-            }
-            with open('scholar_data.json', 'w') as f:
-                json.dump(root_data, f, indent=2)
+def calc_i10_index(papers: list[dict]) -> int:
+    return sum(1 for p in papers if (p.get('citationCount') or 0) >= 10)
 
-            print("Updated scholar_data.json")
 
-            # Update publications.yml if it exists
-            if os.path.exists('_data/publications.yml'):
-                self.update_publications_yml(publications)
+def write_json(path: str, data: dict) -> None:
+    os.makedirs(os.path.dirname(path) or '.', exist_ok=True)
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=2)
+    print(f"Updated {path}")
 
-            return True
 
-        except Exception as e:
-            print(f"Error updating data files: {e}")
-            return False
+def main() -> bool:
+    print(f"Starting Scholar update for ID: {SCHOLAR_ID}")
 
-    def update_publications_yml(self, scholar_publications):
-        """Update citations in existing publications.yml"""
-        try:
-            with open('_data/publications.yml', 'r') as f:
-                existing_pubs = yaml.safe_load(f) or []
-            
-            # Update citation counts for matching publications
-            for existing_pub in existing_pubs:
-                title = existing_pub.get('title', '').lower()
-                
-                # Find matching publication from scholar data
-                for scholar_pub in scholar_publications:
-                    scholar_title = scholar_pub.get('title', '').lower()
-                    
-                    # Simple title matching (you might want to improve this)
-                    if self.titles_match(title, scholar_title):
-                        existing_pub['citations'] = scholar_pub.get('citations', 0)
-                        existing_pub['scholar_url'] = scholar_pub.get('scholar_url', '')
-                        break
-            
-            # Write updated data back
-            with open('_data/publications.yml', 'w') as f:
-                yaml.dump(existing_pubs, f, default_flow_style=False, allow_unicode=True)
-            
-            print("Updated _data/publications.yml")
-            
-        except Exception as e:
-            print(f"Error updating publications.yml: {e}")
-
-    def titles_match(self, title1, title2):
-        """Simple title matching function"""
-        # Remove common words and punctuation for better matching
-        def clean_title(title):
-            # Remove punctuation and convert to lowercase
-            clean = re.sub(r'[^\w\s]', '', title.lower())
-            # Remove common words
-            common_words = {'a', 'an', 'the', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'with', 'by'}
-            words = [word for word in clean.split() if word not in common_words]
-            return ' '.join(words)
-        
-        clean1 = clean_title(title1)
-        clean2 = clean_title(title2)
-        
-        # Check if titles are similar (at least 80% of words match)
-        words1 = set(clean1.split())
-        words2 = set(clean2.split())
-        
-        if not words1 or not words2:
-            return False
-            
-        intersection = len(words1.intersection(words2))
-        union = len(words1.union(words2))
-        
-        similarity = intersection / union if union > 0 else 0
-        return similarity > 0.8
-
-    def generate_summary_stats(self, metrics):
-        """Generate summary statistics for the website"""
-        try:
-            stats = {
-                'total_citations': metrics.get('total_citations', 0),
-                'h_index': metrics.get('h_index', 0),
-                'i10_index': metrics.get('i10_index', 0),
-                'publications_count': len(metrics.get('publications', [])),
-                'last_updated': metrics.get('last_updated', '')
-            }
-            
-            with open('_data/stats.json', 'w') as f:
-                json.dump(stats, f, indent=2)
-            
-            print("Generated _data/stats.json")
-            
-        except Exception as e:
-            print(f"Error generating summary stats: {e}")
-
-def main():
-    """Main function"""
-    scholar_id = os.getenv('GOOGLE_SCHOLAR_ID')
-    
-    if not scholar_id:
-        # Use hardcoded Scholar ID as fallback
-        scholar_id = 'jIFv3pIAAAAJ'  # Arun's actual Scholar ID
-        print(f"Warning: GOOGLE_SCHOLAR_ID environment variable not set")
-        print(f"Using hardcoded Scholar ID: {scholar_id}")
-    
-    if not scholar_id:
-        print("Error: No Google Scholar ID available")
-        return False
-    
-    print(f"Starting Scholar update for ID: {scholar_id}")
-    
-    updater = ScholarUpdater(scholar_id)
-    
-    # Fetch author data
-    author_data = updater.get_author_data()
-    if not author_data:
-        print("Failed to fetch author data")
-        return False
-    
-    print(f"Successfully fetched data for: {author_data.get('name', 'Unknown')}")
-    
-    # Extract metrics and publications
-    metrics = updater.extract_metrics(author_data)
-    publications = updater.get_publications(author_data)
-    
-    print(f"Extracted {len(publications)} publications")
-    print(f"Total citations: {metrics.get('total_citations', 0)}")
-    print(f"H-index: {metrics.get('h_index', 0)}")
-    
-    # Update data files
-    if updater.update_data_files(metrics, publications):
-        updater.generate_summary_stats(metrics)
-        print("Successfully updated all data files")
-        return True
-    else:
-        print("Failed to update data files")
+    author = find_author(SCHOLAR_ID, AUTHOR_NAME_QUERY)
+    if not author:
+        print("Error: Could not find author on Semantic Scholar.")
         return False
 
-if __name__ == "__main__":
-    success = main()
-    exit(0 if success else 1)
+    s2_id = author['authorId']
+    print(f"Semantic Scholar author ID: {s2_id}")
+
+    papers = get_papers(s2_id)
+    print(f"Fetched {len(papers)} papers")
+
+    total_citations = author.get('citationCount') or 0
+    h_index = author.get('hIndex') or 0
+    paper_count = author.get('paperCount') or len(papers)
+    i10_index = calc_i10_index(papers)
+
+    print(f"Citations: {total_citations} | H-index: {h_index} | "
+          f"i10-index: {i10_index} | Papers: {paper_count}")
+
+    now = datetime.utcnow().isoformat()
+
+    # Root-level file fetched by the live JS widget
+    metrics = {
+        'total_citations': total_citations,
+        'h_index': h_index,
+        'i10_index': i10_index,
+        'publications_count': paper_count,
+        'last_updated': now,
+        'scholar_url': f'https://scholar.google.com/citations?user={SCHOLAR_ID}',
+    }
+    write_json('scholar_data.json', metrics)
+
+    # Full publication list for future use
+    pub_list = []
+    for p in papers:
+        pub_list.append({
+            'title': p.get('title', ''),
+            'year': p.get('year') or '',
+            'authors': ', '.join(
+                a.get('name', '') for a in (p.get('authors') or [])
+            ),
+            'venue': p.get('venue', ''),
+            'citations': p.get('citationCount') or 0,
+            'pdf_url': (p.get('openAccessPdf') or {}).get('url', ''),
+            'doi': (p.get('externalIds') or {}).get('DOI', ''),
+        })
+
+    write_json('_data/scholar.json', {
+        'metrics': metrics,
+        'publications': pub_list,
+        'last_updated': now,
+    })
+    write_json('_data/stats.json', {
+        'total_citations': total_citations,
+        'h_index': h_index,
+        'i10_index': i10_index,
+        'publications_count': paper_count,
+        'last_updated': now,
+    })
+
+    print("All data files updated successfully.")
+    return True
+
+
+if __name__ == '__main__':
+    sys.exit(0 if main() else 1)
