@@ -1,125 +1,112 @@
 {
   "metrics": {
-    "total_citations": 43,
+    "total_citations": 44,
     "h_index": 4,
     "i10_index": 1,
-    "yearly_citations": [
-      {
-        "year": 2024,
-        "count": 1
-      },
-      {
-        "year": 2025,
-        "count": 32
-      },
-      {
-        "year": 2026,
-        "count": 9
-      }
-    ],
-    "last_updated": "2026-03-21T18:10:52.388979"
+    "publications_count": 11,
+    "last_updated": "2026-04-12T01:55:25.293609",
+    "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
     {
-      "title": "A survey on data-centric ai: Tabular learning from reinforcement learning and generative ai perspective",
-      "authors": "Wangyang Ying and Cong Wei and Nanxu Gong and Xinyuan Wang and Haoyue Bai and Arun Vignesh Malarkkan and Sixun Dong and Dongjie Wang and Denghui Zhang and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 19,
-      "scholar_url": "https://arxiv.org/abs/2502.08828",
-      "eprint_url": "",
-      "abstract": "Tabular data is one of the most widely used data formats across various domains such as bioinformatics, healthcare, and marketing. As artificial intelligence moves towards a data-centric perspective, improving data quality is essential for enhancing model performance in tabular data-driven applications. This survey focuses on data-driven tabular data optimization, specifically exploring reinforcement learning (RL) and generative approaches for feature selection and feature generation as fundamen..."
-    },
-    {
-      "title": "Multi-view causal graph fusion based anomaly detection in cyber-physical infrastructures",
-      "authors": "Arun Vignesh Malarkkan and Dongjie Wang and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2024,
-      "citations": 8,
-      "scholar_url": "https://dl.acm.org/doi/abs/10.1145/3627673.3680096",
-      "eprint_url": "",
-      "abstract": "The rise in cyber attacks on cyber-physical critical infrastructures, like water treatment networks, is evidenced by the growing frequency of breaches and the evolving sophistication of attack methods. Attack detection in such vulnerable critical infrastructures can be generalized into a task of anomaly detection with multivariate stream data. There are two essential challenges of this task: 1) Evolving and Shifting data streams; and 2) Robust Attack Pattern representation. Existing anomaly dete..."
-    },
-    {
-      "title": "Rethinking spatio-temporal anomaly detection: A vision for causality-driven cybersecurity",
-      "authors": "Arun Vignesh Malarkkan and Haoyue Bai and Xinyuan Wang and Anjali Kaushik and Dongjie Wang and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 6,
-      "scholar_url": "https://arxiv.org/abs/2507.08177",
-      "eprint_url": "",
-      "abstract": "As cyber-physical systems grow increasingly interconnected and spatially distributed, ensuring their resilience against evolving cyberattacks has become a critical priority. Spatio-Temporal Anomaly detection plays an important role in ensuring system security and operational integrity. However, current data-driven approaches, largely driven by black-box deep learning, face challenges in interpretability, adaptability to distribution shifts, and robustness under evolving system dynamics. In this ..."
-    },
-    {
-      "title": "Distribution shift aware neural tabular learning",
-      "authors": "Wangyang Ying and Nanxu Gong and Dongjie Wang and Xinyuan Wang and Arun Vignesh Malarkkan and Vivek Gupta and Chandan K Reddy and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 4,
-      "scholar_url": "https://arxiv.org/abs/2508.19486",
-      "eprint_url": "",
-      "abstract": "Tabular learning transforms raw features into optimized spaces for downstream tasks, but its effectiveness deteriorates under distribution shifts between training and testing data. We formalize this challenge as the Distribution Shift Tabular Learning (DSTL) problem and propose a novel Shift-Aware Feature Transformation (SAFT) framework to address it. SAFT reframes tabular learning from a discrete search task into a continuous representation-generation paradigm, enabling differentiable optimizat..."
-    },
-    {
-      "title": "Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures",
-      "authors": "Arun Vignesh Malarkkan and Dongjie Wang and Haoyue Bai and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 3,
-      "scholar_url": "https://ieeexplore.ieee.org/abstract/document/11314741/",
-      "eprint_url": "",
-      "abstract": "The escalating threat of cyberattacks on real-time critical infrastructures poses significant risks to public safety, necessitating detection methods that can effectively capture complex system interdependencies and adapt to evolving attack patterns. Traditional real-time anomaly detection techniques often produce excessive false positives due to their statistical sensitivity to high data variability and class imbalance. To address these limitations, recent research has explored modeling causal ..."
-    },
-    {
-      "title": "DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming",
-      "authors": "Arun Vignesh Malarkkan and Haoyue Bai and Anjali Kaushik and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 2,
-      "scholar_url": "https://arxiv.org/abs/2509.00693",
-      "eprint_url": "",
-      "abstract": "In real-world applications, domain data often contains identifiable or sensitive attributes, is subject to strict regulations (e.g., HIPAA, GDPR), and requires explicit data feature engineering for interpretability and transparency. Existing feature engineering primarily focuses on advancing downstream task performance, often risking privacy leakage. We generalize this learning task under such new requirements as Privacy-Preserving Data Reprogramming (PPDR): given a dataset, transforming feature..."
-    },
-    {
-      "title": "Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems",
-      "authors": "Arun Vignesh Malarkkan and Haoyue Bai and Dongjie Wang and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2025,
-      "citations": 1,
-      "scholar_url": "https://arxiv.org/abs/2508.09504",
-      "eprint_url": "",
-      "abstract": "With the growing complexity of cyberattacks targeting critical infrastructures such as water treatment networks, there is a pressing need for robust anomaly detection strategies that account for both system vulnerabilities and evolving attack patterns. Traditional methods -- statistical, density-based, and graph-based models struggle with distribution shifts and class imbalance in multivariate time series, often leading to high false positive rates. To address these challenges, we propose CGAD, ..."
-    },
-    {
-      "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
-      "authors": "Arun Vignesh Malarkkan and Manan Roy Choudhury and Guangwei Zhang and Vivek Gupta and Qingyun Wang and Yanjie Fu and Denghui Zhang",
-      "venue": "Unknown Venue",
+      "title": "Causally-Guided Diffusion for Stable Feature Selection",
       "year": 2026,
+      "authors": "Arun Vignesh Malarkkan, Xinyuan Wang, Kunpeng Liu, Denghui Zhang, Yanjie Fu",
+      "venue": "",
       "citations": 0,
-      "scholar_url": "https://arxiv.org/abs/2603.11339",
-      "eprint_url": "",
-      "abstract": "Large language models (LLMs) are increasingly applied to financial analysis, yet their ability to audit structured financial statements under explicit accounting principles remains poorly explored. Existing benchmarks primarily evaluate question answering, numerical reasoning, or anomaly detection on synthetically corrupted data, making it unclear whether models can reliably verify or localize rule compliance on correct financial statements. We introduce FinRule-Bench, a benchmark for evaluating..."
-    },
-    {
-      "title": "Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning",
-      "authors": "Arun Vignesh Malarkkan and Wangyang Ying and Yanjie Fu",
-      "venue": "Unknown Venue",
-      "year": 2026,
-      "citations": 0,
-      "scholar_url": "https://arxiv.org/abs/2602.16435",
-      "eprint_url": "",
-      "abstract": "Automated feature engineering (AFE) enables AI systems to autonomously construct high-utility representations from raw tabular data. However, existing AFE methods rely on statistical heuristics, yielding brittle features that fail under distribution shift. We introduce CAFE, a framework that reformulates AFE as a causally-guided sequential decision process, bridging causal discovery with reinforcement learning-driven feature construction. Phase I learns a sparse directed acyclic graph over featu..."
+      "pdf_url": "",
+      "doi": ""
     },
     {
       "title": "Evolving Demonstration Optimization for Chain-of-Thought Feature Transformation",
-      "authors": "Xinyuan Wang and Kunpeng Liu and Arun Vignesh Malarkkan and Yanjie Fu",
-      "venue": "Unknown Venue",
       "year": 2026,
+      "authors": "Xinyuan Wang, Kunpeng Liu, Arun Vignesh Malarkkan, Yanjie Fu",
+      "venue": "",
       "citations": 0,
-      "scholar_url": "https://arxiv.org/abs/2603.09987",
-      "eprint_url": "",
-      "abstract": "Feature Transformation (FT) is a core data-centric AI task that improves feature space quality to advance downstream predictive performance. However, discovering effective transformations remains challenging due to the large space of feature-operator combinations. Existing solutions rely on discrete search or latent generation, but they are frequently limited by sample inefficiency, invalid candidates, and redundant generations with limited coverage. Large Language Models (LLMs) offer strong pri..."
+      "pdf_url": "",
+      "doi": ""
+    },
+    {
+      "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
+      "year": 2026,
+      "authors": "Arun Vignesh Malarkkan, M. Choudhury, Guangwei Zhang, Vivek Gupta, Qingyun Wang, Yanjie Fu, Denghui Zhang",
+      "venue": "",
+      "citations": 0,
+      "pdf_url": "",
+      "doi": ""
+    },
+    {
+      "title": "Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning",
+      "year": 2026,
+      "authors": "Arun Vignesh Malarkkan, Wangyang Ying, Yanjie Fu",
+      "venue": "arXiv.org",
+      "citations": 1,
+      "pdf_url": "",
+      "doi": "10.48550/arXiv.2602.16435"
+    },
+    {
+      "title": "Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems",
+      "year": 2025,
+      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Dongjie Wang, Yanjie Fu",
+      "venue": "BigData Congress [Services Society]",
+      "citations": 0,
+      "pdf_url": "",
+      "doi": "10.1109/BigData66926.2025.11401886"
+    },
+    {
+      "title": "Rethinking Spatio-Temporal Anomaly Detection: A Vision for Causality-Driven Cybersecurity",
+      "year": 2025,
+      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Xinyuan Wang, Anjali Kaushik, Dongjie Wang, Yanjie Fu",
+      "venue": "arXiv.org",
+      "citations": 5,
+      "pdf_url": "",
+      "doi": "10.48550/arXiv.2507.08177"
+    },
+    {
+      "title": "Distribution Shift Aware Neural Tabular Learning",
+      "year": 2025,
+      "authors": "Wangyang Ying, Nanxu Gong, Dongjie Wang, Xinyuan Wang, Arun Vignesh Malarkkan, Vivek Gupta, Chandan K. Reddy, Yanjie Fu",
+      "venue": "arXiv.org",
+      "citations": 5,
+      "pdf_url": "",
+      "doi": "10.48550/arXiv.2508.19486"
+    },
+    {
+      "title": "A Survey on Data-Centric AI: Tabular Learning from Reinforcement Learning and Generative AI Perspective",
+      "year": 2025,
+      "authors": "Wangyang Ying, Cong Wei, Nanxu Gong, Xinyuan Wang, Haoyue Bai, Arun Vignesh Malarkkan, Sixun Dong, Dongjie Wang, Denghui Zhang, Yanjie Fu",
+      "venue": "arXiv.org",
+      "citations": 18,
+      "pdf_url": "",
+      "doi": "10.48550/arXiv.2502.08828"
+    },
+    {
+      "title": "Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures",
+      "year": 2025,
+      "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Haoyue Bai, Yanjie Fu",
+      "venue": "IEEE Transactions on Big Data",
+      "citations": 4,
+      "pdf_url": "",
+      "doi": "10.48550/arXiv.2507.14387"
+    },
+    {
+      "title": "DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming",
+      "year": 2025,
+      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Anjali Kaushik, Yanjie Fu",
+      "venue": "Industrial Conference on Data Mining",
+      "citations": 2,
+      "pdf_url": "",
+      "doi": "10.1109/ICDM65498.2025.00150"
+    },
+    {
+      "title": "Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures",
+      "year": 2024,
+      "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Yanjie Fu",
+      "venue": "International Conference on Information and Knowledge Management",
+      "citations": 9,
+      "pdf_url": "",
+      "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-03-21T18:11:18.389856"
+  "last_updated": "2026-04-12T01:55:25.293609"
 }
