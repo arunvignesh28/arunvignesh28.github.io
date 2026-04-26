@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 1,
     "publications_count": 11,
-    "last_updated": "2026-04-19T01:59:31.539311",
+    "last_updated": "2026-04-26T02:02:36.781118",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -31,7 +31,7 @@
       "year": 2026,
       "authors": "Arun Vignesh Malarkkan, M. Choudhury, Guangwei Zhang, Vivek Gupta, Qingyun Wang, Yanjie Fu, Denghui Zhang",
       "venue": "",
-      "citations": 0,
+      "citations": 1,
       "pdf_url": "",
       "doi": ""
     },
@@ -108,5 +108,5 @@
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-04-19T01:59:31.539311"
+  "last_updated": "2026-04-26T02:02:36.781118"
 }
