@@ -2,8 +2,8 @@ name: Update Citation Counts
 
 on:
   schedule:
-    # Runs every Sunday at midnight UTC
-    - cron: '0 0 * * 0'
+    # Runs every Sunday at 03:17 UTC (off-peak to avoid S2 rate limits at midnight)
+    - cron: '17 3 * * 0'
   workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
 
 jobs:
@@ -28,8 +28,9 @@ jobs:
       - name: Run citation update script
         env:
           GOOGLE_SCHOLAR_ID: jIFv3pIAAAAJ
+          S2_AUTHOR_ID: "2326969007"
           SCHOLAR_NAME: "Arun Vignesh Malarkkan"
-          # Optional: set SEMANTIC_SCHOLAR_API_KEY secret for higher rate limits
+          # Uncomment and add secret for higher rate limits (100 req/s vs 1 req/s):
           # SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
         run: python .github/scripts/update_scholar.py
 
