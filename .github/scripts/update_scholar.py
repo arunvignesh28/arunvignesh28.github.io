@@ -92,6 +92,15 @@ def write_json(path: str, data: dict) -> None:
     print(f"  wrote {path}")
 
 
+def load_existing_metrics(path: str) -> dict:
+    """Load previously stored metrics to use as a ratchet floor."""
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
 def main() -> bool:
     print(f"Starting Scholar update — Google Scholar ID: {GOOGLE_SCHOLAR_ID}")
 
@@ -114,7 +123,18 @@ def main() -> bool:
     paper_count = author.get('paperCount') or len(papers)
     i10_index = calc_i10_index(papers)
 
-    print(f"Citations: {total_citations}  H-index: {h_index}  "
+    print(f"S2 values — Citations: {total_citations}  H-index: {h_index}  "
+          f"i10-index: {i10_index}  Papers: {paper_count}")
+
+    # S2 underestimates vs Google Scholar due to coverage gaps.
+    # Ratchet: never write values lower than previously stored.
+    prev = load_existing_metrics('scholar_data.json')
+    total_citations = max(total_citations, prev.get('total_citations', 0))
+    h_index = max(h_index, prev.get('h_index', 0))
+    i10_index = max(i10_index, prev.get('i10_index', 0))
+    paper_count = max(paper_count, prev.get('publications_count', 0))
+
+    print(f"Final values — Citations: {total_citations}  H-index: {h_index}  "
           f"i10-index: {i10_index}  Papers: {paper_count}")
 
     now = datetime.utcnow().isoformat()
