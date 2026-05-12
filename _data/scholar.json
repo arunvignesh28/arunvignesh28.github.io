@@ -58,7 +58,7 @@
       "year": 2025,
       "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Xinyuan Wang, Anjali Kaushik, Dongjie Wang, Yanjie Fu",
       "venue": "arXiv.org",
-      "citations": 5,
+      "citations": 6,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2507.08177"
     },
@@ -108,5 +108,5 @@
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-04-26T02:02:36.781118"
+  "last_updated": "2026-05-11T00:41:38.020312"
 }
