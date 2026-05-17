@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 3,
     "publications_count": 15,
-    "last_updated": "2026-05-11T00:00:00.000000",
+    "last_updated": "2026-05-17T06:30:00.787123",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -87,7 +87,7 @@
       "venue": "IEEE Transactions on Big Data",
       "citations": 4,
       "pdf_url": "",
-      "doi": "10.48550/arXiv.2507.14387"
+      "doi": "10.1109/TBDATA.2025.3648314"
     },
     {
       "title": "DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming",
@@ -108,5 +108,5 @@
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-05-11T00:41:38.020312"
+  "last_updated": "2026-05-17T06:30:00.787123"
 }
