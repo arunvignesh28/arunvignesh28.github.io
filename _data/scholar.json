@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 3,
     "publications_count": 15,
-    "last_updated": "2026-06-28T07:09:39.567277",
+    "last_updated": "2026-07-05T06:49:44.368252",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -13,7 +13,7 @@
       "year": 2026,
       "authors": "Arun Vignesh Malarkkan, Xinyuan Wang, Kunpeng Liu, Denghui Zhang, Yanjie Fu",
       "venue": "arXiv.org",
-      "citations": 0,
+      "citations": 1,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2603.20930"
     },
@@ -25,6 +25,15 @@
       "citations": 0,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2603.09987"
+    },
+    {
+      "title": "Invariant Reasoning Directions in Latent Trajectories of Language Models",
+      "year": 2026,
+      "authors": "Arun Vignesh Malarkkan, M. Choudhury, Utkarsh Byahut, Yashkumar Charde, Vivek Gupta, Yanjie Fu",
+      "venue": "",
+      "citations": 0,
+      "pdf_url": "",
+      "doi": ""
     },
     {
       "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
@@ -76,7 +85,7 @@
       "year": 2025,
       "authors": "Wangyang Ying, Cong Wei, Nanxu Gong, Xinyuan Wang, Haoyue Bai, Arun Vignesh Malarkkan, Sixun Dong, Dongjie Wang, Denghui Zhang, Yanjie Fu",
       "venue": "arXiv.org",
-      "citations": 18,
+      "citations": 19,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2502.08828"
     },
@@ -108,5 +117,5 @@
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-06-28T07:09:39.567277"
+  "last_updated": "2026-07-05T06:49:44.368252"
 }
