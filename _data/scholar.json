@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 3,
     "publications_count": 15,
-    "last_updated": "2026-07-12T06:11:59.804728",
+    "last_updated": "2026-07-19T06:06:38.253261",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -112,10 +112,10 @@
       "year": 2024,
       "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Yanjie Fu",
       "venue": "International Conference on Information and Knowledge Management",
-      "citations": 10,
+      "citations": 11,
       "pdf_url": "",
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-07-12T06:11:59.804728"
+  "last_updated": "2026-07-19T06:06:38.253261"
 }
