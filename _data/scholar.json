@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 3,
     "publications_count": 15,
-    "last_updated": "2026-08-09T04:35:48.241202",
+    "last_updated": "2026-08-16T03:58:16.087583",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -30,10 +30,10 @@
       "title": "Invariant Reasoning Directions in Latent Trajectories of Language Models",
       "year": 2026,
       "authors": "Arun Vignesh Malarkkan, M. Choudhury, Utkarsh Byahut, Yashkumar Charde, Vivek Gupta, Yanjie Fu",
-      "venue": "",
+      "venue": "arXiv.org",
       "citations": 0,
       "pdf_url": "",
-      "doi": ""
+      "doi": "10.48550/arXiv.2606.29164"
     },
     {
       "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
@@ -117,5 +117,5 @@
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-08-09T04:35:48.241202"
+  "last_updated": "2026-08-16T03:58:16.087583"
 }
