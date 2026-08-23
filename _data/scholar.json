@@ -4,7 +4,7 @@
     "h_index": 4,
     "i10_index": 3,
     "publications_count": 15,
-    "last_updated": "2026-08-16T03:58:16.087583",
+    "last_updated": "2026-08-23T03:59:22.672412",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
@@ -40,7 +40,7 @@
       "year": 2026,
       "authors": "Arun Vignesh Malarkkan, M. Choudhury, Guangwei Zhang, Vivek Gupta, Qingyun Wang, Yanjie Fu, Denghui Zhang",
       "venue": "arXiv.org",
-      "citations": 5,
+      "citations": 6,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2603.11339"
     },
@@ -67,7 +67,7 @@
       "year": 2025,
       "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Xinyuan Wang, Anjali Kaushik, Dongjie Wang, Yanjie Fu",
       "venue": "arXiv.org",
-      "citations": 7,
+      "citations": 8,
       "pdf_url": "",
       "doi": "10.48550/arXiv.2507.08177"
     },
@@ -112,10 +112,10 @@
       "year": 2024,
       "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Yanjie Fu",
       "venue": "International Conference on Information and Knowledge Management",
-      "citations": 11,
+      "citations": 12,
       "pdf_url": "",
       "doi": "10.1145/3627673.3680096"
     }
   ],
-  "last_updated": "2026-08-16T03:58:16.087583"
+  "last_updated": "2026-08-23T03:59:22.672412"
 }
