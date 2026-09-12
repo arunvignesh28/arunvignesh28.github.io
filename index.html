@@ -1296,10 +1296,31 @@
             </div>
             <div class="news-list">
                 <div class="news-item">
+                    <span class="news-date">Sep 2026</span>
+                    <div class="news-text">
+                        <span class="news-tag service">Service</span>
+                        Serving on the <strong>Program Committees</strong> of <strong>AAAI 2026</strong> and <strong>IEEE BigData 2026</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Jul 2026</span>
+                    <div class="news-text">
+                        <span class="news-tag service">Internship</span>
+                        Completed summer research internship on <strong>LLM Post-Training</strong> at <strong>The Home Depot</strong>. Post-trained 4B and 8B models for catalog-scale product compatibility reasoning; the subspace-constrained preference optimization method was <strong>deployed in production</strong>, improving incompatibility recall under paraphrase and distribution drift by <strong>8% over standard DPO</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">Jul 2026</span>
+                    <div class="news-text">
+                        <span class="news-tag paper">Paper</span>
+                        <strong>Invariant Reasoning Directions in Latent Trajectories of Language Models</strong> accepted at the <strong>ICML 2026 Workshop on Mechanistic Interpretability</strong>.
+                    </div>
+                </div>
+                <div class="news-item">
                     <span class="news-date">May 2026</span>
                     <div class="news-text">
                         <span class="news-tag paper">Paper</span>
-                        <strong>CAFE</strong>, <strong>TILR</strong>, <strong>IIDA</strong>, <strong>FCDiff</strong>, and <strong>SART</strong> submitted to <strong>NeurIPS 2026</strong>.
+                        <strong>CAFE</strong>, <strong>TILR</strong>, <strong>FCDiff</strong>, and <strong>SART</strong> submitted to <strong>NeurIPS 2026</strong>.
                     </div>
                 </div>
                 <div class="news-item">
@@ -1376,7 +1397,7 @@
                 <div class="about-text">
                     <p>
                     I am a Ph.D. candidate in Computer Science at Arizona State University, 
-                    working in the Knowledge Discovery and Data Mining (KDD) Lab under Dr. Yanjie Fu. 
+                    advised by Dr. Ross Maciejewski. 
                     My research focuses on improving the reliability and generalization of large language model (LLM)  
                     reasoning using causal inference and mechanistic interpretability, with an emphasis on invariant mechanism discovery, 
                     spurious correlation mitigation, and robust evaluation.
@@ -1408,16 +1429,16 @@
                 </div>
                 <div class="stats">
                     <div class="stat-item">
-                        <span class="stat-number" id="publicationsCount" data-target="15">15</span>
+                        <span class="stat-number" id="publicationsCount" data-target="14">14</span>
                         <div class="stat-label">Publications</div>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" id="citationsCount" data-target="59">59</span>
+                        <span class="stat-number" id="citationsCount" data-target="80">80</span>
                         <div class="stat-label">Citations</div>
                         <div style="font-size:0.75rem; color: var(--gray-600); margin-top:0.5rem;" id="scholarLastUpdated"></div>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" id="hIndexCount" data-target="4">4</span>
+                        <span class="stat-number" id="hIndexCount" data-target="5">5</span>
                         <div class="stat-label">H-Index</div>
                     </div>
                     <div class="stat-item">
@@ -1569,6 +1590,20 @@
                 </p>
             </div>
             <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="company">The Home Depot</div>
+                    <div class="role">Research Intern — LLM Post-Training</div>
+                    <div class="duration">May 2026 — July 2026</div>
+                    <p>
+                        Post-trained 4B and 8B small language models for product compatibility reasoning, 
+                        enabling catalog-scale verification of whether products can be correctly used, installed, 
+                        or purchased together. Developed a subspace-constrained preference optimization framework 
+                        that separates stable compatibility signal from unstable catalog-specific variation, 
+                        improving incompatibility recall under paraphrase and distribution drift by 8% over standard DPO. 
+                        Built trajectory- and prediction-level evaluation protocols measuring accuracy, invariance, 
+                        calibration, and consistency under distribution shift.
+                    </p>
+                </div>
                 <div class="experience-card">
                     <div class="company">DOW Chemicals</div>
                     <div class="role">Doctoral Researcher</div>
@@ -1803,23 +1838,6 @@
                         <div class="pub-status">Under Review — NeurIPS 2026</div>
                     </div>
                     <div class="pub-title">
-                        IIDA: Interaction-Informed Data Agent for Automated Feature Engineering
-                    </div>
-                    <div class="pub-authors">
-                        H. Mallubhotla, <strong>Arun Vignesh Malarkkan</strong> et al., Y. Fu
-                    </div>
-                    <div class="pub-venue">
-                        Under Review — NeurIPS 2026
-                    </div>
-                    <div class="pub-links">
-                    </div>
-                </div>
-
-                <div class="publication-item" data-category="co">
-                    <div class="pub-meta">
-                        <div class="pub-status">Under Review — NeurIPS 2026</div>
-                    </div>
-                    <div class="pub-title">
                         FCDiff: Flat-Consensus Diffusion for Robust Tabular Data Reshaping
                     </div>
                     <div class="pub-authors">
@@ -1834,7 +1852,7 @@
 
                 <div class="publication-item" data-category="co">
                     <div class="pub-meta">
-                        <div class="pub-status">Under Review — NeurIPS 2026</div>
+                        <div class="pub-status">Under Review — KDD 2026</div>
                     </div>
                     <div class="pub-title">
                         SART: Shortcut-Aware Reasoning Training via Gradient Geometry
@@ -1843,7 +1861,7 @@
                         H. Cao, K. Liu, <strong>Arun Vignesh Malarkkan</strong>, D. Wang, Y. Fu
                     </div>
                     <div class="pub-venue">
-                        Under Review — NeurIPS 2026
+                        Under Review — KDD 2026
                     </div>
                     <div class="pub-links">
                     </div>
@@ -1871,7 +1889,23 @@
 
                 <div class="publication-item" data-category="first">
                     <div class="pub-meta">
-                        <div class="pub-status">Under Review — KDD 2026</div>
+                        <div class="pub-status">Under Review — KDD 2027</div>
+                    </div>
+                    <div class="pub-title">
+                        Causally-Guided Diffusion for Stable Feature Selection
+                    </div>
+                    <div class="pub-authors">
+                        <strong>Arun Vignesh Malarkkan</strong>, X. Wang, K. Liu, D. Zhang, Y. Fu
+                    </div>
+                    <div class="pub-venue">
+                        arXiv preprint. Under Review — KDD 2027
+                    </div>
+                    <div class="pub-links">
+                    </div>
+                </div>
+                <div class="publication-item" data-category="first">
+                    <div class="pub-meta">
+                        <div class="pub-status">Under Review — AAAI 2026</div>
                     </div>
                     <div class="pub-title">
                         FinRule-Bench: A Benchmark for Joint Reasoning of LLMs over Financial Tables and Principles
@@ -1880,7 +1914,7 @@
                         <strong>Arun Vignesh Malarkkan</strong> et al.
                     </div>
                     <div class="pub-venue">
-                        arXiv preprint. Under Review — KDD 2026
+                        arXiv preprint. Under Review — AAAI 2026
                     </div>
                     <div class="pub-links">
                     </div>

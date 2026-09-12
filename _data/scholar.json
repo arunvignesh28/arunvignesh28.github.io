@@ -1,112 +1,112 @@
 {
   "metrics": {
-    "total_citations": 59,
-    "h_index": 4,
+    "total_citations": 80,
+    "h_index": 5,
     "i10_index": 3,
-    "publications_count": 15,
-    "last_updated": "2026-05-11T00:00:00.000000",
+    "publications_count": 14,
+    "last_updated": "2026-09-12T02:58:30.344153+00:00",
+    "source": "google_scholar",
     "scholar_url": "https://scholar.google.com/citations?user=jIFv3pIAAAAJ"
   },
   "publications": [
     {
-      "title": "Causally-Guided Diffusion for Stable Feature Selection",
-      "year": 2026,
-      "authors": "Arun Vignesh Malarkkan, Xinyuan Wang, Kunpeng Liu, Denghui Zhang, Yanjie Fu",
-      "venue": "",
-      "citations": 0,
-      "pdf_url": "",
-      "doi": ""
+      "title": "A survey on data-centric ai: Tabular learning from reinforcement learning and generative ai perspective",
+      "year": 2025,
+      "authors": "W Ying, C Wei, N Gong, X Wang, H Bai, AV Malarkkan, S Dong, D Wang, ...",
+      "venue": "arXiv preprint arXiv:2502.08828",
+      "citations": 25
     },
     {
-      "title": "Evolving Demonstration Optimization for Chain-of-Thought Feature Transformation",
-      "year": 2026,
-      "authors": "Xinyuan Wang, Kunpeng Liu, Arun Vignesh Malarkkan, Yanjie Fu",
-      "venue": "",
-      "citations": 0,
-      "pdf_url": "",
-      "doi": ""
+      "title": "Multi-view causal graph fusion based anomaly detection in cyber-physical infrastructures",
+      "year": 2024,
+      "authors": "AV Malarkkan, D Wang, Y Fu",
+      "venue": "Proceedings of the 33rd ACM international conference on information and …",
+      "citations": 17
     },
     {
-      "title": "FinRule-Bench: A Benchmark for Joint Reasoning over Financial Tables and Principles",
+      "title": "Rethinking spatio-temporal anomaly detection: A vision for causality-driven cybersecurity",
+      "year": 2025,
+      "authors": "AV Malarkkan, H Bai, X Wang, A Kaushik, D Wang, Y Fu",
+      "venue": "arXiv preprint arXiv:2507.08177",
+      "citations": 12
+    },
+    {
+      "title": "Finrule-bench: A benchmark for joint reasoning over financial tables and principles",
       "year": 2026,
-      "authors": "Arun Vignesh Malarkkan, M. Choudhury, Guangwei Zhang, Vivek Gupta, Qingyun Wang, Yanjie Fu, Denghui Zhang",
-      "venue": "",
-      "citations": 1,
-      "pdf_url": "",
-      "doi": ""
+      "authors": "AV Malarkkan, MR Choudhury, G Zhang, V Gupta, Q Wang, Y Fu, ...",
+      "venue": "arXiv preprint arXiv:2603.11339",
+      "citations": 6
+    },
+    {
+      "title": "Distribution shift aware neural tabular learning",
+      "year": 2025,
+      "authors": "W Ying, N Gong, D Wang, X Wang, AV Malarkkan, V Gupta, CK Reddy, ...",
+      "venue": "arXiv preprint arXiv:2508.19486",
+      "citations": 6
+    },
+    {
+      "title": "Incremental causal graph learning for online cyberattack detection in cyber-physical infrastructures",
+      "year": 2025,
+      "authors": "AV Malarkkan, D Wang, H Bai, Y Fu",
+      "venue": "IEEE Transactions on Big Data",
+      "citations": 5
+    },
+    {
+      "title": "Causal graph profiling via structural divergence for robust anomaly detection in cyber-physical systems",
+      "year": 2025,
+      "authors": "AV Malarkkan, H Bai, D Wang, Y Fu",
+      "venue": "2025 IEEE International Conference on Big Data (BigData), 2004-2012",
+      "citations": 3
+    },
+    {
+      "title": "Delta: Variational disentangled learning for privacy-preserving data reprogramming",
+      "year": 2025,
+      "authors": "AV Malarkkan, H Bai, A Kaushik, Y Fu",
+      "venue": "2025 IEEE International Conference on Data Mining (ICDM), 1410-1419",
+      "citations": 3
     },
     {
       "title": "Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning",
       "year": 2026,
-      "authors": "Arun Vignesh Malarkkan, Wangyang Ying, Yanjie Fu",
-      "venue": "arXiv.org",
-      "citations": 1,
-      "pdf_url": "",
-      "doi": "10.48550/arXiv.2602.16435"
+      "authors": "AV Malarkkan, W Ying, Y Fu",
+      "venue": "arXiv preprint arXiv:2602.16435",
+      "citations": 2
     },
     {
-      "title": "Causal Graph Profiling via Structural Divergence for Robust Anomaly Detection in Cyber-Physical Systems",
-      "year": 2025,
-      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Dongjie Wang, Yanjie Fu",
-      "venue": "BigData Congress [Services Society]",
-      "citations": 0,
-      "pdf_url": "",
-      "doi": "10.1109/BigData66926.2025.11401886"
+      "title": "Parking Without Building: Agentic AI for Parking Planning Through Urban Contradiction Reasoning",
+      "year": 2026,
+      "authors": "H Cao, D King, X Wang, AV Malarkkan, K Liu, D Wang, Y Fu",
+      "venue": "Preprints",
+      "citations": 1
     },
     {
-      "title": "Rethinking Spatio-Temporal Anomaly Detection: A Vision for Causality-Driven Cybersecurity",
-      "year": 2025,
-      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Xinyuan Wang, Anjali Kaushik, Dongjie Wang, Yanjie Fu",
-      "venue": "arXiv.org",
-      "citations": 6,
-      "pdf_url": "",
-      "doi": "10.48550/arXiv.2507.08177"
+      "title": "Invariant Reasoning Directions in Latent Trajectories of Language Models",
+      "year": 2026,
+      "authors": "AV Malarkkan, MR Choudhury, U Byahut, YR Charde, V Gupta, Y Fu",
+      "venue": "arXiv preprint arXiv:2606.29164",
+      "citations": 0
     },
     {
-      "title": "Distribution Shift Aware Neural Tabular Learning",
-      "year": 2025,
-      "authors": "Wangyang Ying, Nanxu Gong, Dongjie Wang, Xinyuan Wang, Arun Vignesh Malarkkan, Vivek Gupta, Chandan K. Reddy, Yanjie Fu",
-      "venue": "arXiv.org",
-      "citations": 5,
-      "pdf_url": "",
-      "doi": "10.48550/arXiv.2508.19486"
+      "title": "Causally-Guided Diffusion for Stable Feature Selection",
+      "year": 2026,
+      "authors": "AV Malarkkan, X Wang, K Liu, D Zhang, Y Fu",
+      "venue": "arXiv preprint arXiv:2603.20930",
+      "citations": 0
     },
     {
-      "title": "A Survey on Data-Centric AI: Tabular Learning from Reinforcement Learning and Generative AI Perspective",
-      "year": 2025,
-      "authors": "Wangyang Ying, Cong Wei, Nanxu Gong, Xinyuan Wang, Haoyue Bai, Arun Vignesh Malarkkan, Sixun Dong, Dongjie Wang, Denghui Zhang, Yanjie Fu",
-      "venue": "arXiv.org",
-      "citations": 18,
-      "pdf_url": "",
-      "doi": "10.48550/arXiv.2502.08828"
+      "title": "Evolving Demonstration Optimization for Chain-of-Thought Feature Transformation",
+      "year": 2026,
+      "authors": "X Wang, K Liu, AV Malarkkan, Y Fu",
+      "venue": "arXiv preprint arXiv:2603.09987",
+      "citations": 0
     },
     {
-      "title": "Incremental Causal Graph Learning for Online Cyberattack Detection in Cyber-Physical Infrastructures",
-      "year": 2025,
-      "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Haoyue Bai, Yanjie Fu",
-      "venue": "IEEE Transactions on Big Data",
-      "citations": 4,
-      "pdf_url": "",
-      "doi": "10.48550/arXiv.2507.14387"
-    },
-    {
-      "title": "DELTA: Variational Disentangled Learning for Privacy-Preserving Data Reprogramming",
-      "year": 2025,
-      "authors": "Arun Vignesh Malarkkan, Haoyue Bai, Anjali Kaushik, Yanjie Fu",
-      "venue": "Industrial Conference on Data Mining",
-      "citations": 2,
-      "pdf_url": "",
-      "doi": "10.1109/ICDM65498.2025.00150"
-    },
-    {
-      "title": "Multi-view Causal Graph Fusion Based Anomaly Detection in Cyber-Physical Infrastructures",
-      "year": 2024,
-      "authors": "Arun Vignesh Malarkkan, Dongjie Wang, Yanjie Fu",
-      "venue": "International Conference on Information and Knowledge Management",
-      "citations": 9,
-      "pdf_url": "",
-      "doi": "10.1145/3627673.3680096"
+      "title": "CAFE: Causally-Guided Automated Feature Engineering with Multi-Agent Reinforcement Learning",
+      "year": "",
+      "authors": "AV Malarkkan, W Ying, H Bai, Y Fu",
+      "venue": "",
+      "citations": 0
     }
   ],
-  "last_updated": "2026-05-11T00:41:38.020312"
+  "last_updated": "2026-09-12T02:58:30.344153+00:00"
 }
